@@ -283,6 +283,100 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
     opacity:.62;
   }
 }
+
+/* =========================================================
+   FINAL COVER POLISH · REAL WAVING JALUR GEMILANG
+   ========================================================= */
+.liveFlag{
+  right:-4%;
+  top:6%;
+  width:54%;
+  height:39%;
+  overflow:hidden;
+  border-radius:10px 0 0 22px;
+  background:transparent;
+  box-shadow:0 24px 65px #0007;
+  opacity:.9;
+  transform:rotate(-3deg);
+  animation:flagFloat 5.8s ease-in-out infinite alternate;
+  transform-origin:left center;
+}
+.liveFlag img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  filter:drop-shadow(0 10px 20px #0006);
+}
+@keyframes flagFloat{
+  0%{transform:rotate(-3.8deg) skewY(0deg) translateY(0)}
+  45%{transform:rotate(-1.8deg) skewY(-.45deg) translateY(4px)}
+  100%{transform:rotate(-3deg) skewY(.35deg) translateY(-2px)}
+}
+
+/* Remove every previous artificial building layer. */
+.liveTower,.towerPetronas,.towerKL{display:none!important}
+
+/* Gold geometric / songket-inspired motif */
+.merdekaMotif{
+  position:absolute;
+  z-index:1;
+  width:230px;
+  height:230px;
+  border:1px solid #f2c94c28;
+  transform:rotate(45deg);
+  opacity:.75;
+}
+.merdekaMotif:before,.merdekaMotif:after{
+  content:"";
+  position:absolute;
+  inset:25px;
+  border:1px solid #f2c94c22;
+}
+.merdekaMotif span{
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:#f2c94c;
+  box-shadow:0 0 18px #f2c94c88;
+}
+.merdekaMotif span:nth-child(1){left:-4px;top:50%}
+.merdekaMotif span:nth-child(2){right:-4px;top:50%}
+.merdekaMotif span:nth-child(3){top:-4px;left:50%}
+.merdekaMotif span:nth-child(4){bottom:-4px;left:50%}
+.motifA{left:-115px;bottom:18%;animation:motifSpin 18s linear infinite}
+.motifB{right:-115px;bottom:8%;transform:rotate(45deg) scale(.72);opacity:.48;animation:motifSpin 22s linear infinite reverse}
+@keyframes motifSpin{to{transform:rotate(405deg)}}
+
+.goldArc{
+  position:absolute;
+  z-index:1;
+  width:420px;
+  height:420px;
+  border:1px solid #f2c94c22;
+  border-radius:50%;
+  pointer-events:none;
+}
+.arcA{right:-210px;bottom:-160px}
+.arcB{left:-260px;top:44%;width:520px;height:520px;border-color:#d7192020}
+
+@media(max-width:800px){
+  .liveFlag{
+    width:82%;
+    height:31%;
+    right:-21%;
+    top:9%;
+    opacity:.7;
+  }
+  .motifA{left:-145px;bottom:14%;transform:rotate(45deg) scale(.65)}
+  .motifB{right:-145px;bottom:5%;transform:rotate(45deg) scale(.5)}
+  .arcA{right:-260px;bottom:-220px}
+  .arcB{left:-330px;top:47%;width:430px;height:430px}
+}
+@media(prefers-reduced-motion:reduce){
+  .liveFlag,.merdekaMotif{animation:none!important}
+}
 </style>
 </head>
 <body>
@@ -303,15 +397,16 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
     <div class="liveFirework fw3"><i></i></div>
     <div class="liveMoon"><span>★</span></div>
     <div class="liveFlag" aria-label="Jalur Gemilang">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Malaysia-flag-animation.svg"
            alt="Jalur Gemilang"
            loading="eager"
            decoding="async">
     </div>
     <div class="liveSkyline"><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="liveTower towerPetronas"><i></i><i></i></div>
-    <div class="liveTower towerKL"></div>
     <div class="liveLight light1"></div><div class="liveLight light2"></div>
+    <div class="merdekaMotif motifA"><span></span><span></span><span></span><span></span></div>
+    <div class="merdekaMotif motifB"><span></span><span></span><span></span><span></span></div>
+    <div class="goldArc arcA"></div><div class="goldArc arcB"></div>
   </div>
   <div class="heroGlow glowA"></div>
   <div class="heroGlow glowB"></div>
