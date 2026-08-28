@@ -736,6 +736,61 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
   .visualMenuItem{grid-template-columns:72px 1fr 34px;min-height:106px;padding:12px;border-radius:17px}
   .vmIcon{width:62px;height:76px}.vmText b{font-size:16px}.vmText small{font-size:8px}
 }
+
+/* =========================================================
+   GALLERY · GOOGLE PHOTOS
+   ========================================================= */
+.gallerySection{position:relative;overflow:hidden;padding:96px 0 100px;background:#f5f7fb}
+.gallerySection:before{content:"";position:absolute;right:-180px;top:-190px;width:500px;height:500px;border:1px solid #d7192020;border-radius:50%}
+.gallerySection .wrap{position:relative;z-index:2}
+.galleryHead{display:flex;justify-content:space-between;align-items:end;gap:30px}
+.galleryHead h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-2px;color:#071b45;margin:7px 0 13px}
+.galleryHead .intro{max-width:610px;color:#65758d;line-height:1.8}
+.galleryQR{text-align:center;flex:0 0 auto}
+.qrFrame{width:112px;height:112px;padding:7px;background:#fff;border-radius:16px;box-shadow:0 15px 35px #071b4514;border:1px solid #dfe5ee}
+.qrFrame img{display:block;width:100%;height:100%;border-radius:9px}
+.galleryQR small{display:block;margin-top:8px;color:#071b45;font-size:7px;letter-spacing:1.3px;font-weight:1000}
+.galleryLayout{display:grid;grid-template-columns:1.3fr .7fr;gap:13px;margin-top:38px}
+.galleryHero{display:grid;grid-template-columns:1fr 1fr;min-height:330px;border-radius:25px;overflow:hidden;background:#071b45;text-decoration:none;color:#fff;box-shadow:0 22px 48px #071b4518;transition:.25s}
+.galleryHero:hover{transform:translateY(-5px);box-shadow:0 28px 60px #071b4524}
+.galleryArtwork{position:relative;overflow:hidden;background:linear-gradient(145deg,#d71920,#7d1118);padding:26px}
+.galleryArtwork:before{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff20;border-radius:50%;right:-120px;top:-100px}
+.galleryArtwork:after{content:"";position:absolute;left:-30px;bottom:-70px;width:210px;height:210px;border:1px solid #f2c94c35;transform:rotate(45deg)}
+.gallerySun{position:absolute;right:28px;top:22px;color:#f2c94c;font-size:22px;animation:gallerySpark 2.6s ease-in-out infinite alternate}
+@keyframes gallerySpark{to{transform:scale(1.2) rotate(12deg);opacity:.65}}
+.galleryDate{position:absolute;left:27px;bottom:28px;z-index:2}.galleryDate b{display:block;font-size:64px;line-height:.8;letter-spacing:-4px}.galleryDate small{display:block;margin-top:10px;color:#f2c94c;font-size:8px;font-weight:1000;letter-spacing:2px}
+.galleryFlagLines{position:absolute;left:0;right:0;top:38%;height:70px;opacity:.18;background:repeating-linear-gradient(to bottom,#fff 0 7px,transparent 7px 14px);transform:skewY(-9deg)}
+.galleryOpen{position:absolute;right:20px;bottom:20px;z-index:2;padding:8px 10px;border:1px solid #ffffff35;border-radius:999px;font-size:7px;letter-spacing:1.1px;font-weight:1000}
+.galleryCaption{padding:31px 27px;align-self:end}.galleryCaption small{color:#f2c94c;font-size:7px;letter-spacing:1.4px;font-weight:1000}.galleryCaption h3{font-size:27px;line-height:1.05;margin:9px 0 8px}.galleryCaption p{color:#aebdd3;font-size:10px;line-height:1.7;margin:0}
+.gallerySide{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.galleryMini{position:relative;min-height:155px;padding:19px;border-radius:18px;border:1px solid #dfe5ee;background:#fff;overflow:hidden;transition:.2s}
+.galleryMini:hover{transform:translateY(-3px);box-shadow:0 14px 30px #071b4510}
+.galleryMini span{font-size:8px;color:#d71920;letter-spacing:1.2px;font-weight:1000}.galleryMini b{display:block;color:#071b45;font-size:14px;line-height:1.1;margin-top:27px;max-width:130px}.galleryMini small{display:block;color:#7b899c;font-size:8px;margin-top:7px}.galleryMini i{position:absolute;right:14px;top:14px;font-style:normal;font-size:16px;opacity:.8}
+.galleryMini:nth-child(2){background:#fff8eb;border-color:#f2c94c55}.galleryMini:nth-child(3){background:#fff2f2;border-color:#d7192030}.galleryMini:nth-child(4){background:#eef4fb}
+.galleryButton{display:flex;align-items:center;gap:12px;margin-top:13px;padding:17px 19px;border-radius:15px;background:#071b45;color:#fff;text-decoration:none;box-shadow:0 12px 30px #071b4515}.galleryButton>span{font-size:19px}.galleryButton b{font-size:11px}.galleryButton small{color:#9eb0c8;font-size:8px}.galleryButton strong{margin-left:auto;color:#f2c94c;font-size:17px}
+
+.vmGallery{background:linear-gradient(135deg,#d71920,#8c1219)}
+.cameraIcon{font-size:37px;color:#f2c94c;transform:rotate(-10deg)}.cameraLens{position:absolute;width:18px;height:18px;border:3px solid #fff;border-radius:50%}
+@media(max-width:800px){
+ .gallerySection{padding:72px 0 76px}.galleryHead{display:block}.galleryQR{margin-top:20px;text-align:left}.qrFrame{width:96px;height:96px}
+ .galleryLayout{grid-template-columns:1fr}.galleryHero{grid-template-columns:1fr;min-height:440px}.galleryArtwork{min-height:230px}.galleryCaption{align-self:auto;padding:23px}
+ .gallerySide{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ .gallerySide{grid-template-columns:1fr}.galleryMini{min-height:120px}.galleryHero{min-height:430px}.galleryButton{flex-wrap:wrap}.galleryButton small{width:100%;padding-left:31px}
+}
+
+/* FINAL LYRICS / QR STABILITY */
+.lyricsSection .lyricsList{display:grid;gap:10px}
+.lyricCard{display:block!important}
+.lyricCard summary{cursor:pointer}
+.lyricCard .lyricBody{display:none!important}
+.lyricCard[open] .lyricBody{display:block!important}
+.lyricEmpty{display:flex;align-items:center;gap:13px;padding:4px 0}
+.lyricNote{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#071b45;color:#f2c94c;font-size:20px;flex:0 0 40px}
+.lyricEmpty strong{display:block;color:#071b45;font-size:11px}
+.lyricEmpty p{margin:4px 0 0;color:#718095;font-size:9px;line-height:1.6}
+.galleryQR .qrFrame img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important}
 </style>
 </head>
 <body>
@@ -950,6 +1005,14 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
         <div class="vmText"><span>06</span><b>Tentang Program</b><small>Latar, tema & ringkasan sambutan</small></div>
         <div class="vmGo">↗</div>
       </a>
+      <a class="visualMenuItem vmGallery" href="#galeri">
+        <div class="vmIcon">
+          <span class="cameraIcon">⌁</span>
+          <span class="cameraLens"></span>
+        </div>
+        <div class="vmText"><span>07</span><b>Galeri Program</b><small>Foto sepanjang program berlangsung</small></div>
+        <div class="vmGo">↗</div>
+      </a>
     </div>
 
     <div class="menuHint"><span>✦</span> Tip: tekan mana-mana menu untuk terus ke bahagian pilihan anda.</div>
@@ -1041,18 +1104,48 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 </div>
 </section>
 
-<section class="momentsSection">
+<section class="gallerySection" id="galeri">
   <div class="wrap">
-    <div class="momentsHead">
-      <div><div class="ey">Visual Highlights</div><h2>Semangat Merdeka,<br>dalam setiap aktiviti.</h2></div>
-      <p class="intro">Ruang visual ini disediakan untuk menonjolkan detik-detik program apabila gambar aktiviti sekolah dimasukkan nanti.</p>
+    <div class="galleryHead">
+      <div>
+        <div class="ey">GALERI PROGRAM</div>
+        <h2>Detik-detik Merdeka,<br>dirakam bersama.</h2>
+        <p class="intro">Koleksi gambar sepanjang pelaksanaan Bulan Semarak Citra Merdeka 2026. Semua gambar akan dikemas kini dalam Google Photos.</p>
+      </div>
+      <div class="galleryQR">
+        <div class="qrFrame">
+          <img src="qr-galeri.png" alt="QR Code Galeri Google Photos" loading="lazy">
+        </div>
+        <small>IMBAS UNTUK GALERI</small>
+      </div>
     </div>
-    <div class="momentsGrid">
-      <div class="moment m1"><div><small>01 · PELANCARAN</small><b>Gimik &<br>persembahan</b></div><span>17</span></div>
-      <div class="moment m2"><div><small>02 · AMBANG</small><b>Semarak<br>patriotisme</b></div><span>28</span></div>
-      <div class="moment m3"><div><small>03 · PENUTUP</small><b>Raikan<br>kejayaan</b></div><span>15</span></div>
-      <div class="moment m4"><div><small>SIMPS · 2026</small><b>🇲🇾</b></div><span>69</span></div>
+
+    <div class="galleryLayout">
+      <a class="galleryHero" href="https://photos.app.goo.gl/2ihvXeLzmHNczK3s9" target="_blank" rel="noopener">
+        <div class="galleryArtwork">
+          <span class="gallerySun">✦</span>
+          <div class="galleryDate"><b>2026</b><small>CITRA MERDEKA</small></div>
+          <div class="galleryFlagLines"></div>
+          <span class="galleryOpen">BUKA GALERI ↗</span>
+        </div>
+        <div class="galleryCaption">
+          <small>GOOGLE PHOTOS</small>
+          <h3>Galeri Rasmi Program</h3>
+          <p>Lihat koleksi gambar terkini sepanjang program berlangsung.</p>
+        </div>
+      </a>
+
+      <div class="gallerySide">
+        <div class="galleryMini"><span>01</span><b>Pelancaran</b><small>17 Ogos 2026</small><i>📸</i></div>
+        <div class="galleryMini"><span>02</span><b>Aktiviti & Pertandingan</b><small>Sepanjang sambutan</small><i>📸</i></div>
+        <div class="galleryMini"><span>03</span><b>Ambang Merdeka</b><small>28 Ogos 2026</small><i>📸</i></div>
+        <div class="galleryMini"><span>04</span><b>Majlis Penutup</b><small>15 September 2026</small><i>📸</i></div>
+      </div>
     </div>
+
+    <a class="galleryButton" href="https://photos.app.goo.gl/2ihvXeLzmHNczK3s9" target="_blank" rel="noopener">
+      <span>📷</span><b>Buka Galeri Google Photos</b><small>Lihat semua gambar program</small><strong>↗</strong>
+    </a>
   </div>
 </section>
 
@@ -1216,27 +1309,46 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
   <div class="wrap">
     <div class="ey">05 · LAGU PATRIOTIK</div>
     <div class="lyricsHead">
-      <div><h2>Lagu & lirik<br>patriotik.</h2><p class="intro">Tekan pada tajuk lagu untuk membuka atau menutup lirik.</p></div>
+      <div><h2>Nyanyian kita,<br>semangat kita.</h2><p class="intro">Empat lagu patriotik yang disenaraikan dalam atur cara pelancaran. Tekan tajuk lagu untuk membuka panel.</p></div>
       <div class="lyricsBadge">♪</div>
     </div>
     <div class="lyricsList">
       <details class="lyricCard">
-  <summary><span class="lyricNo">01</span><div><b>Keranamu Malaysia</b><small>Tekan untuk buka lirik</small></div><i>+</i></summary>
-  <div class="lyricBody"><p>Tekan untuk membuka lirik.</p></div>
-<div class="song"><div class="tag">Lagu 02</div></div>
+  <summary><span class="lyricNo">01</span><div><b>Keranamu Malaysia</b><small>Lagu 01 · Tekan untuk buka</small></div><i>+</i></summary>
+  <div class="lyricBody">
+    <div class="lyricEmpty">
+      <span class="lyricNote">♪</span>
+      <div><strong>Lirik lagu</strong><p>Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
+    </div>
+  </div>
 </details><details class="lyricCard">
-  <summary><span class="lyricNo">02</span><div><b>Jalur Gemilang</b><small>Tekan untuk buka lirik</small></div><i>+</i></summary>
-  <div class="lyricBody"><p>Tekan untuk membuka lirik.</p></div>
-<div class="song"><div class="tag">Lagu 03</div></div>
+  <summary><span class="lyricNo">02</span><div><b>Jalur Gemilang</b><small>Lagu 02 · Tekan untuk buka</small></div><i>+</i></summary>
+  <div class="lyricBody">
+    <div class="lyricEmpty">
+      <span class="lyricNote">♪</span>
+      <div><strong>Lirik lagu</strong><p>Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
+    </div>
+  </div>
 </details><details class="lyricCard">
-  <summary><span class="lyricNo">03</span><div><b>Kita Punya Malaysia</b><small>Tekan untuk buka lirik</small></div><i>+</i></summary>
-  <div class="lyricBody"><p>Bunkface · Lagu patriotik.</p></div>
-<div class="song"><div class="tag">Lagu 04</div></div>
+  <summary><span class="lyricNo">03</span><div><b>Kita Punya Malaysia</b><small>Lagu 03 · Tekan untuk buka</small></div><i>+</i></summary>
+  <div class="lyricBody">
+    <div class="lyricEmpty">
+      <span class="lyricNote">♪</span>
+      <div><strong>Lirik lagu</strong><p>Bunkface · Lagu patriotik. Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
+    </div>
+  </div>
 </details><details class="lyricCard">
-  <summary><span class="lyricNo">04</span><div><b>Saya Anak Malaysia</b><small>Tekan untuk buka lirik</small></div><i>+</i></summary>
-  <div class="lyricBody"><p>Lagu patriotik.</p></div>
-</div>
-</div></section></div>
+  <summary><span class="lyricNo">04</span><div><b>Saya Anak Malaysia</b><small>Lagu 04 · Tekan untuk buka</small></div><i>+</i></summary>
+  <div class="lyricBody">
+    <div class="lyricEmpty">
+      <span class="lyricNote">♪</span>
+      <div><strong>Lirik lagu</strong><p>Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
+    </div>
+  </div>
+</details>
+    </div>
+  </div>
+</section></div>
 </details>
     </div>
   </div>
@@ -1302,47 +1414,4 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if((e.
 })();
 </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const section = document.getElementById('lagu');
-  if (!section) return;
-
-  // Native <details> is the primary, dependency-free accordion.
-  section.querySelectorAll('details').forEach(function(d){
-    const sum = d.querySelector('summary');
-    if (!sum) return;
-    sum.setAttribute('role','button');
-    sum.setAttribute('aria-expanded', d.open ? 'true' : 'false');
-    d.addEventListener('toggle', function(){
-      sum.setAttribute('aria-expanded', d.open ? 'true' : 'false');
-    });
-  });
-
-  // Fallback for any older custom lyric buttons/cards still present.
-  section.querySelectorAll('[data-lyrics],[data-target],.lyricsBtn,.lyricBtn,.songBtn').forEach(function(btn){
-    if (btn.closest('summary')) return;
-    btn.addEventListener('click', function(e){
-      const selector = btn.getAttribute('data-lyrics') || btn.getAttribute('data-target');
-      let panel = null;
-      if (selector) {
-        try { panel = section.querySelector(selector); } catch(err) {}
-        if (!panel) panel = document.getElementById(selector.replace(/^#/,''));
-      }
-      if (!panel) {
-        const card = btn.closest('.song,.songCard,.songitem,.songItem,.card,article,li,div');
-        if (card) panel = card.querySelector('.lyrics,.lyric,.lyricsText,.songLyrics,.songBody,.lirik,.lirikText');
-      }
-      if (!panel) return;
-      e.preventDefault();
-      const open = panel.classList.toggle('lyricsOpen');
-      panel.style.display = open ? 'block' : 'none';
-      panel.style.visibility = open ? 'visible' : 'hidden';
-      panel.style.opacity = open ? '1' : '0';
-      panel.style.height = open ? 'auto' : '0';
-      panel.style.maxHeight = open ? 'none' : '0';
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-});
-</script>
 </body></html>
