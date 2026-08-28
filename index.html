@@ -74,13 +74,22 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 .heroCopy,.heroCard{display:none}
 .heroScene{background-position:center top;background-repeat:no-repeat}
 @media(max-width:800px){.hero{min-height:72vh;height:72vh}.heroGrid{height:72vh}.heroScene{background-size:cover;background-position:center top}}
+
+/* ORGANISATIONAL CHART */
+.orgSection{background:#f4f6fa;padding:100px 0}.orgChart{margin-top:42px;padding:35px 20px 45px;background:linear-gradient(180deg,#071a3d 0%,#09285b 100%);border-radius:28px;box-shadow:0 30px 80px #06173524;overflow:hidden}
+.orgNode{position:relative;display:flex;align-items:center;gap:13px;min-height:78px;padding:14px 17px;background:#fff;border:2px solid #dbe3ef;border-radius:14px;box-shadow:0 12px 30px #0003;color:var(--navy)}
+.orgNode small{display:block;font-size:9px;letter-spacing:1px;color:#7a879a;font-weight:950;margin-bottom:5px}.orgNode strong{display:block;font-size:12px;line-height:1.45}.nodeIcon{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(145deg,#f2c94c,#d99819);color:#071a3d;font-weight:1000;font-size:15px}
+.topNode{width:min(470px,90%);margin:auto;border-color:#f2c94c;background:linear-gradient(110deg,#fff,#fffaf0)}.topNode small{color:#b77900}.topNode .nodeIcon{background:#071a3d;color:#f2c94c}
+.connector{height:28px;width:2px;background:#f2c94c;margin:auto}.orgRow{display:grid;gap:12px;position:relative}.orgRow.three{grid-template-columns:repeat(3,1fr)}.orgRow.four{grid-template-columns:repeat(4,1fr)}.orgRow.three:before,.orgRow.four:before{content:"";position:absolute;top:-14px;left:calc(16.66%);right:calc(16.66%);height:2px;background:#f2c94c}.orgRow.four:before{left:12.5%;right:12.5%}
+.sectionLine{display:flex;align-items:center;gap:15px;margin:42px 0 25px;color:#fff;font-weight:950;font-size:12px;letter-spacing:1.5px}.sectionLine:before,.sectionLine:after{content:"";height:1px;background:#f2c94c66;flex:1}.sectionLine span{padding:10px 17px;border:1px solid #f2c94c;background:#d71920;border-radius:999px}
+.lower{align-items:start}.orgPanel{background:#fff;border:2px solid #e2e7ef;border-radius:16px;overflow:hidden;box-shadow:0 15px 35px #0002}.orgPanel[open]{border-color:#f2c94c}.orgPanel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:17px 16px;background:linear-gradient(110deg,#fff,#f7f9fc)}.orgPanel summary::-webkit-details-marker{display:none}.orgPanel summary:after{content:"+";margin-left:auto;color:#d71920;font-size:20px;font-weight:900}.orgPanel[open] summary:after{content:"−"}.panelNo{width:31px;height:31px;border-radius:9px;display:grid;place-items:center;background:#071a3d;color:#f2c94c;font-size:10px;font-weight:950}.orgPanel summary b{display:block;color:var(--navy);font-size:12px}.orgPanel summary small{display:block;color:#7d899c;font-size:9px;margin-top:3px}.panelBody{padding:7px 16px 16px;border-top:1px solid #e5e9f0}.task{padding:12px 0;border-bottom:1px solid #edf0f4}.task:last-child{border-bottom:0}.task b{display:block;color:#d71920;font-size:10px;line-height:1.4}.task span{display:block;color:#69778d;font-size:10px;line-height:1.6;margin-top:3px}
 </style>
 </head>
 <body>
 <nav class="nav"><div class="navin">
 <a class="logo" href="#top">CITRA MERDEKA<small>SIMPS · 2026</small></a>
 <div class="navlinks">
-<a href="#program">Program</a><a href="#tentatif">Tentatif</a><a href="#urusetia">Urusetia</a><a href="#lagu">Lagu</a>
+<a href="#program">Program</a><a href="#tentatif">Tentatif</a><a href="#urusetia">Jawatankuasa</a><a href="#lagu">Lagu</a>
 </div>
 <div><button class="navbtn" onclick="openSearch()">⌕ Cari</button></div>
 </div></nav>
@@ -182,15 +191,101 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 </div>
 </div></section>
 
-<section class="band" id="urusetia"><div class="wrap">
-<div class="ey">04 · Urusetia</div><h2>Orang di sebalik<br>program.</h2>
-<p class="intro">Senarai jawatankuasa rasmi dipecahkan kepada beberapa kumpulan supaya mudah dicari dan dibaca.</p>
-<div class="people">
-<details class="person"><summary>Jawatankuasa Induk</summary><div class="inside">03 · Pengurusan Jawatankuasa Induk Penasihat / Pengerusi En. Safrul Kamalizam bin Safar Naib Pengerusi En. Hassan bin Ahmad Puan Norlaila binti Jusoh En. Mohd Rassidi bin Saini Penyelaras Cik Nor Hanie Nadia binti Kimin Penyelaras Bersama En. Aben Lee A/L Lee Lim (KP Muzik) Puan Zaliha binti Yahaya (KP PSV) Puan Amalia Nazihah binti Ghazali (PSS) Puan Wan Zuliana binti Wan Omar (Prasekolah) Setiausaha Cik Nurul Syafiqah binti Mohd Aris 3</div></details>
-<details class="person"><summary>Pelaksana · Kumpulan 1</summary><div class="inside">04 · Pelaksana Jawatankuasa Pelaksana Buku Program Puan Norsyafikah binti Abd Wahab AJK Siaraya En Ahmad Fadzil bin Abdullah (K) En Hatim bin Zulkifli Hiasan Pentas Puan Zamzarina binti Abdul Samad (K) Puan Umi Kalsom binti Mohd Radzi Cik Ainul Mufidah Gimik Pelancaran &amp; Persembahan Puan Wan Nur Surya binti Wan Rahin (K) Cik Nurul Syafiqah binti Mohd Aris En Rozaini bin Zulkiffle En Azuwan bin Mohamad Pengacara Majlis Puan Nur Athirah binti Rosmadi – Pelancaran &amp; Penutup En Mohd Shauqi Hazriq bin Mohd Said – Ambang Merdeka Puan Siti Nor Fadzillah binti Sh Zuhari – Ambang Merdeka En Aben Lee A/L Lee Lim – Penutup Pertandingan Busana Merdeka Puan Fauziah binti Abu Bakar (K) Puan Saratulmazi binti Abdul Wahid En Fakhrul Anwar bin Ihyaudeen Pertandingan Hiasan Kepala Merdeka Puan Hasimah binti Said (K) Puan Rosazura binti Mohamad Nor En Azuwan bin Mohamad Pertandingan Basikal Merdeka En Nor Hafiz Akmal bin Abdul Razak (K) Puan Norhafiza binti Jamaludin En Zaidi bin Deraman Pertandingan Kembara Merdeka 3.0 Puan Khazimah binti Mokhtar (K) Puan Suhaili binti Abdullah Puan Norhafiza binti Jamaludin En Hatim bin Zulkifli Penyelaras Peserta Guru penasihat unit uniform Guru-guru kelas 4</div></details>
-<details class="person"><summary>Pelaksana · Kumpulan 2</summary><div class="inside">05 · Pelaksana Jawatankuasa Pelaksana Kuiz Hari Ini Dalam Sejarah Puan Ton Ida Haslina binti Ton Hassan (K) Puan Hasimah binti Said Guru Bertugas Mingguan Pertandingan Buku Skrap Tokoh Sejarah Semua guru mata pelajaran Sejarah Pertandingan Kelas Ceria Merdeka Puan Wan Zuliana binti Wan Omar (K) Puan Husna Hadirah Pertandingan Stensilan dan Montaj Puan Zaliha bt Yahaya (K) Puan Amalia Nazihah binti Ghazali Puan Falilnisa binti Hasbullah Pertandingan Nyanyian Solo En Ramdzan bin Mohd Zain (K) Puan Zamzarina binti Abdul Samad Puan Rohayanti binti Basir Pameran dan Kuiz PSS Puan Amalia Nazihah binti Ghazali (K) Cik Nurul Syafiqah binti Mohd Aris Kibaran Jalur Gemilang En Mohd Azmi bin Ali (K) En Zaidi bin Deraman Pekerja Sekolah Gambar dan Dokumentasi Cik Norfiza binti Abdullah Omar (K) Puan Azmani binti Abdul Halim Hadiah Puan Suhaili binti Abdullah (K) Puan Rosazura binti Mohamad Nor Puan Saratulmazi binti Abdul Wahid Puan Wan Siti Aishah binti Wan Sulaiman Bacaan Doa En Fakhrul Anwar bin Ihyaudeen Persiapan Tempat En Nor Hafiz Akmal bin Abdul Razak (K) En Rozaini bin Zulkiffle Pengawas sekolah Kawalan Murid En Mohamad Azmi bin Ali En Zaidi bin Deraman Puan Ton Ida Haslina bt Ton Hassan Puan Falilnisa binti Hasbullah Puan Norsyafikah binti Abd Wahab Pengawas sekolah Kebersihan Pekerja Sekolah 5</div></details>
-</div>
-</div></section>
+
+<section class="orgSection" id="urusetia">
+  <div class="wrap">
+    <div class="ey">04 · Struktur Pengurusan</div>
+    <h2>Carta organisasi<br>jawatankuasa.</h2>
+    <p class="intro">Struktur jawatankuasa dipersembahkan secara hierarki supaya peranan utama dapat dilihat dengan cepat, manakala senarai pelaksana disusun mengikut bidang tugas.</p>
+
+    <div class="orgChart">
+      <div class="orgNode topNode">
+        <div class="nodeIcon">★</div>
+        <div><small>PENASIHAT / PENGERUSI</small><strong>En. Safrul Kamalizam bin Safar</strong></div>
+      </div>
+
+      <div class="connector down"></div>
+
+      <div class="orgRow three">
+        <div class="orgNode">
+          <div class="nodeIcon">1</div>
+          <div><small>NAIB PENGERUSI</small><strong>En. Hassan bin Ahmad</strong></div>
+        </div>
+        <div class="orgNode">
+          <div class="nodeIcon">2</div>
+          <div><small>NAIB PENGERUSI</small><strong>Puan Norlaila binti Jusoh</strong></div>
+        </div>
+        <div class="orgNode">
+          <div class="nodeIcon">3</div>
+          <div><small>NAIB PENGERUSI</small><strong>En. Mohd Rassidi bin Saini</strong></div>
+        </div>
+      </div>
+
+      <div class="connector down"></div>
+      <div class="orgRow four">
+        <div class="orgNode">
+          <div class="nodeIcon">◎</div>
+          <div><small>PENYELARAS</small><strong>Cik Nor Hanie Nadia binti Kimin</strong></div>
+        </div>
+        <div class="orgNode">
+          <div class="nodeIcon">◎</div>
+          <div><small>PENYELARAS BERSAMA</small><strong>En. Aben Lee A/L Lee Lim<br>Puan Zaliha binti Yahaya<br>Puan Amalia Nazihah binti Ghazali<br>Puan Wan Zuliana binti Wan Omar</strong></div>
+        </div>
+        <div class="orgNode">
+          <div class="nodeIcon">✎</div>
+          <div><small>SETIAUSAHA</small><strong>Cik Nurul Syafiqah binti Mohd Aris</strong></div>
+        </div>
+        <div class="orgNode">
+          <div class="nodeIcon">◉</div>
+          <div><small>BENDAHARI</small><strong>En. Aben Lee A/L Lee Lim<br>(KP Muzik)</strong></div>
+        </div>
+      </div>
+
+      <div class="sectionLine"><span>JAWATANKUASA PELAKSANA</span></div>
+
+      <div class="orgRow three lower">
+        <details class="orgPanel" open>
+          <summary><span class="panelNo">01</span><div><b>Pelaksana · Kumpulan 1</b><small>Aktiviti & pertandingan utama</small></div></summary>
+          <div class="panelBody">
+            <div class="task"><b>Buku Program</b><span>Puan Norsyafikah binti Abd Wahab</span></div>
+            <div class="task"><b>Siaraya</b><span>En Ahmad Fadzil bin Abdullah (K), En Hatim bin Zulkifli</span></div>
+            <div class="task"><b>Hiasan Pentas</b><span>Puan Zamzarina binti Abdul Samad (K), Puan Umi Kalsom binti Mohd Radzi, Cik Ainul Mufidah</span></div>
+            <div class="task"><b>Gimik Pelancaran & Persembahan</b><span>Puan Wan Nur Surya binti Wan Rahin (K), Cik Nurul Syafiqah binti Mohd Aris, En Rozaini bin Zulkiffle, En Azuwan bin Mohamad</span></div>
+            <div class="task"><b>Pengacara Majlis</b><span>Puan Nur Athirah binti Rosmadi · Pelancaran & Penutup; En Mohd Shauqi Hazriq bin Mohd Said · Ambang Merdeka; Puan Siti Nor Fadzillah binti Sh Zuhari · Ambang Merdeka; En Aben Lee A/L Lee Lim · Penutup</span></div>
+            <div class="task"><b>Pertandingan Busana Merdeka</b><span>Puan Fauziah binti Abu Bakar (K), Puan Saratulmazi binti Abdul Wahid, En Fakhrul Anwar bin Ihyaudeen</span></div>
+            <div class="task"><b>Hiasan Kepala Merdeka</b><span>Puan Hasimah binti Said (K), Puan Rosazura binti Mohamad Nor, En Azuwan bin Mohamad</span></div>
+          </div>
+        </details>
+
+        <details class="orgPanel">
+          <summary><span class="panelNo">02</span><div><b>Pelaksana · Kumpulan 2</b><small>Aktiviti & pertandingan utama</small></div></summary>
+          <div class="panelBody">
+            <div class="task"><b>Kuiz Hari Ini Dalam Sejarah</b><span>Puan Ton Ida Haslina binti Ton Hassan (K), Puan Hasimah binti Said, Guru Bertugas Mingguan</span></div>
+            <div class="task"><b>Buku Skrap Tokoh Sejarah</b><span>Semua guru mata pelajaran Sejarah</span></div>
+            <div class="task"><b>Kelas Ceria Merdeka</b><span>Puan Wan Zuliana binti Wan Omar (K), Puan Husna Hadirah</span></div>
+            <div class="task"><b>Stensilan & Montaj</b><span>Puan Zaliha bt Yahaya (K), Puan Amalia Nazihah binti Ghazali, Puan Falilnisa binti Hasbullah</span></div>
+            <div class="task"><b>Nyanyian Solo</b><span>En Ramdzan bin Mohd Zain (K), Puan Zamzarina binti Abdul Samad, Puan Rohayanti binti Basir</span></div>
+            <div class="task"><b>Pameran & Kuiz PSS</b><span>Puan Amalia Nazihah binti Ghazali (K), Cik Nurul Syafiqah binti Mohd Aris</span></div>
+          </div>
+        </details>
+
+        <details class="orgPanel">
+          <summary><span class="panelNo">03</span><div><b>Pelaksana · Sokongan</b><small>Logistik, dokumentasi & kawalan</small></div></summary>
+          <div class="panelBody">
+            <div class="task"><b>Kibaran Jalur Gemilang</b><span>En Mohd Azmi bin Ali (K), En Zaidi bin Deraman, Pekerja Sekolah</span></div>
+            <div class="task"><b>Gambar & Dokumentasi</b><span>Cik Norfiza binti Abdullah Omar (K), Puan Azmani binti Abdul Halim</span></div>
+            <div class="task"><b>Hadiah</b><span>Puan Suhaili binti Abdullah (K), Puan Rosazura binti Mohamad Nor, Puan Saratulmazi binti Abdul Wahid, Puan Wan Siti Aishah binti Wan Sulaiman</span></div>
+            <div class="task"><b>Bacaan Doa</b><span>En Fakhrul Anwar bin Ihyaudeen</span></div>
+            <div class="task"><b>Persiapan Tempat</b><span>En Nor Hafiz Akmal bin Abdul Razak (K), En Rozaini bin Zulkiffle, Pengawas sekolah</span></div>
+            <div class="task"><b>Kawalan Murid</b><span>En Mohamad Azmi bin Ali, En Zaidi bin Deraman, Puan Ton Ida Haslina bt Ton Hassan, Puan Falilnisa binti Hasbullah, Puan Norsyafikah binti Abd Wahab, Pengawas sekolah</span></div>
+            <div class="task"><b>Kebersihan</b><span>Pekerja Sekolah</span></div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="lagu"><div class="wrap">
 <div class="ey">05 · Lagu Patriotik</div><h2>Nyanyian kita,<br>semangat kita.</h2>
