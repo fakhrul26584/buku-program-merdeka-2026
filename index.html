@@ -139,6 +139,150 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
  .logo{font-size:10px}.logo small{font-size:7px}
  .navbtn{padding:8px 10px;font-size:12px}
 }
+
+/* =========================================================
+   PRO DESIGN LAYER · HERO / GLANCE / FEATURED / MOMENTS
+   ========================================================= */
+.hero{isolation:isolate}
+.heroGlow{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:3;opacity:.35;mix-blend-mode:screen}
+.glowA{width:260px;height:260px;right:8%;top:18%;background:#f2c94c}.glowB{width:340px;height:340px;left:-8%;bottom:8%;background:#d71920}
+.heroGrain{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E")}
+.heroScroll{position:absolute;z-index:9;left:50%;bottom:25px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;color:#fff8;font-size:7px;letter-spacing:2px;font-weight:900}.heroScroll span{width:1px;height:30px;background:linear-gradient(#f2c94c,transparent);animation:scrollLine 1.7s ease-in-out infinite}@keyframes scrollLine{50%{height:44px;opacity:.35}}
+
+.glanceSection{padding:95px 0 90px;background:#fff}.glanceHead{display:flex;align-items:end;justify-content:space-between;gap:30px}.glanceRange{display:flex;align-items:center;gap:13px;padding:12px 16px;border:1px solid #e0e5ec;border-radius:999px;color:#071b45;font-size:9px;font-weight:950;white-space:nowrap}.glanceRange i{font-style:normal;color:#d71920;font-size:16px}.milestones{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.milestone{position:relative;display:block;text-decoration:none;color:#071b45;min-height:205px;padding:23px;border:1px solid #dfe5ee;border-radius:20px;overflow:hidden;background:#f8f9fb;transition:.25s}.milestone:hover{transform:translateY(-6px);box-shadow:0 20px 45px #071b4514;border-color:#f2c94c}.milestone:after{content:"";position:absolute;width:150px;height:150px;right:-65px;top:-65px;border-radius:50%;background:#071b4510}.milestone.red{background:#fff4f4}.milestone.red:after{background:#d7192015}.milestone.gold{background:#fffaf0}.milestone.gold:after{background:#f2c94c28}.mNo{font-size:9px;font-weight:1000;letter-spacing:1px;color:#9aa5b5}.mDate{margin-top:30px;color:#d71920;font-size:9px;font-weight:1000;letter-spacing:1.2px}.milestone.gold .mDate{color:#a87000}.milestone h3{margin:6px 0 5px;font-size:22px}.milestone p{margin:0;max-width:270px;color:#718095;font-size:10px;line-height:1.6}.mArrow{position:absolute;right:22px;bottom:20px;width:32px;height:32px;display:grid;place-items:center;border-radius:50%;background:#071b45;color:#fff;font-size:14px}.milestone.red .mArrow{background:#d71920}.milestone.gold .mArrow{background:#d99b1c}
+
+.proStats .stat b{font-variant-numeric:tabular-nums}.proStats .stat{position:relative}.proStats .stat:not(:last-child):after{content:"";position:absolute;right:0;top:18%;height:64%;width:1px;background:#e2e7ee}
+
+.featuredBlock{margin:28px 0 35px;padding:28px;border-radius:24px;background:#eef2f7;border:1px solid #dfe5ee}.featuredTop{display:flex;align-items:end;justify-content:space-between;margin-bottom:20px}.featuredTop h3{font-size:28px;line-height:1.02;margin:5px 0 0;color:#071b45}.featuredTop>span{padding:8px 11px;border-radius:999px;background:#d71920;color:#fff;font-size:8px;letter-spacing:1.5px;font-weight:950}.featureGrid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:12px}.featureCard{display:grid;grid-template-columns:105px 1fr;min-height:155px;text-decoration:none;border-radius:17px;overflow:hidden;border:1px solid #e0e5ec;background:#fff;transition:.25s}.featureCard:hover{transform:translateY(-5px);box-shadow:0 18px 35px #071b4518}.fcArt{position:relative;overflow:hidden;background:linear-gradient(145deg,#d71920,#a90e16);color:#fff;padding:15px}.fcArt:after{content:"";position:absolute;width:100px;height:100px;border:1px solid #fff5;border-radius:50%;right:-42px;bottom:-35px}.fcArt b{display:block;font-size:42px;line-height:.85;margin-top:20px}.fcArt small{font-size:8px;font-weight:950;letter-spacing:1px}.fcArt i{display:block;margin-top:18px;font-size:7px;letter-spacing:2px;font-style:normal;font-weight:950}.fcFlag{position:absolute;right:13px;top:10px;color:#f2c94c}.fcDark .fcArt{background:linear-gradient(145deg,#071b45,#0d3777)}.fcGold .fcArt{background:linear-gradient(145deg,#f2c94c,#d89515);color:#071b45}.fcSun,.fcTrophy{position:absolute;right:12px;top:10px}.fcCopy{padding:16px}.fcCopy small{color:#d71920;font-size:7px;letter-spacing:1.2px;font-weight:950}.fcCopy h4{margin:7px 0 5px;font-size:17px;color:#071b45}.fcCopy p{margin:0;color:#718095;font-size:9px;line-height:1.55}.fcCopy span{display:block;margin-top:14px;color:#071b45;font-size:8px;font-weight:950}
+
+.momentsSection{padding:95px 0;background:#071b45;color:#fff}.momentsHead{display:flex;align-items:end;justify-content:space-between;gap:30px}.momentsHead h2{color:#fff}.momentsHead .intro{max-width:420px;color:#aebdd3}.momentsGrid{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-template-rows:150px 150px;gap:10px;margin-top:34px}.moment{position:relative;overflow:hidden;border-radius:18px;padding:20px;display:flex;align-items:end;background:linear-gradient(135deg,#0c3470,#071b45);border:1px solid #ffffff18}.moment:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 25%,#f2c94c55,transparent 23%),linear-gradient(145deg,transparent 40%,#d7192020)}.moment>div,.moment>span{position:relative;z-index:2}.moment small{font-size:7px;letter-spacing:1.5px;color:#f2c94c;font-weight:950}.moment b{display:block;font-size:22px;line-height:1.05;margin-top:5px}.moment>span{position:absolute;right:20px;top:14px;font-size:48px;font-weight:1000;color:#ffffff14}.m1{grid-row:span 2;background:linear-gradient(145deg,#d71920,#7c1016)}.m2{background:linear-gradient(145deg,#123b78,#071b45)}.m3{background:linear-gradient(145deg,#f2c94c,#b7770e);color:#071b45}.m3 small{color:#071b45}.m4{grid-column:2 / span 2;background:linear-gradient(145deg,#0d2d5f,#071b45)}.m4 b{font-size:40px}
+
+@media(max-width:800px){
+ .glanceHead,.momentsHead{display:block}.glanceRange{display:inline-flex;margin-top:18px}
+ .milestones{grid-template-columns:1fr}.milestone{min-height:165px}
+ .featureGrid{grid-template-columns:1fr}.featureCard{grid-template-columns:100px 1fr}
+ .featuredBlock{padding:20px}.featuredTop h3{font-size:23px}
+ .momentsGrid{grid-template-columns:1fr 1fr;grid-template-rows:150px 150px 150px}.m1{grid-row:span 2}.m4{grid-column:1 / span 2}
+}
+@media(max-width:600px){
+ .heroScroll{bottom:15px}
+ .glanceSection,.momentsSection{padding:72px 0}
+ .proStats{grid-template-columns:1fr 1fr}.proStats .stat:not(:last-child):after{display:none}
+ .featuredTop{align-items:start}.featuredTop>span{display:none}
+ .moment b{font-size:18px}
+}
+
+/* =========================================================
+   LIVE COVER · CSS ART / MOTION
+   ========================================================= */
+.hero{min-height:100svh;align-items:stretch;background:#030d22}
+.heroScene{position:absolute!important;inset:0!important;z-index:0!important;overflow:hidden;background:
+ radial-gradient(circle at 78% 25%,#f2c94c18,transparent 18%),
+ radial-gradient(circle at 18% 80%,#d7192020,transparent 24%),
+ linear-gradient(135deg,#02091b 0%,#061a3c 48%,#092d63 100%)!important}
+.heroScene:before{content:"";position:absolute;inset:0;background:
+ linear-gradient(125deg,transparent 0 30%,#d7192010 45%,transparent 57%),
+ linear-gradient(325deg,transparent 0 55%,#f2c94c10 68%,transparent 80%);
+ animation:coverBreathe 8s ease-in-out infinite alternate}
+@keyframes coverBreathe{to{transform:scale(1.06) rotate(.5deg);opacity:.7}}
+
+.liveStars{position:absolute;inset:0;opacity:.65;background-image:
+ radial-gradient(circle at 8% 17%,#fff 0 1px,transparent 2px),
+ radial-gradient(circle at 21% 31%,#f2c94c 0 1px,transparent 2px),
+ radial-gradient(circle at 35% 12%,#fff 0 1px,transparent 2px),
+ radial-gradient(circle at 49% 23%,#fff 0 1px,transparent 2px),
+ radial-gradient(circle at 63% 10%,#f2c94c 0 1px,transparent 2px),
+ radial-gradient(circle at 87% 14%,#fff 0 1px,transparent 2px),
+ radial-gradient(circle at 92% 40%,#fff 0 1px,transparent 2px),
+ radial-gradient(circle at 74% 50%,#f2c94c 0 1px,transparent 2px),
+ radial-gradient(circle at 13% 57%,#fff 0 1px,transparent 2px);
+ animation:starsPulse 4s ease-in-out infinite alternate}
+@keyframes starsPulse{to{opacity:.28;transform:translateY(-5px)}}
+
+.liveMoon{position:absolute;left:7%;top:21%;width:105px;height:105px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f8d86e,#d49a19 72%);box-shadow:0 0 55px #f2c94c55;opacity:.9;transform:rotate(-16deg)}
+.liveMoon:before{content:"";position:absolute;width:78px;height:78px;border-radius:50%;background:#061735;left:24px;top:-8px}
+.liveMoon span{position:absolute;right:8px;bottom:16px;color:#f2c94c;font-size:18px;z-index:2}
+
+.liveFlag{position:absolute;right:-5%;top:5%;width:52%;height:37%;border-radius:8px 0 0 18px;transform:rotate(-4deg);background:
+ linear-gradient(#d71920 0 12%,#fff 12% 24%,#d71920 24% 36%,#fff 36% 48%,#d71920 48% 60%,#fff 60% 72%,#d71920 72% 84%,#fff 84% 100%);
+ box-shadow:0 22px 55px #0006;opacity:.82;filter:saturate(1.15);
+ animation:flagWave 4.8s ease-in-out infinite alternate;transform-origin:left center}
+.liveFlag:before{content:"";position:absolute;left:0;top:0;width:42%;height:100%;background:#061735}
+.liveFlag .crescent{position:absolute;left:8%;top:20%;z-index:2;color:#f2c94c;font-size:72px;line-height:1}
+.liveFlag .star{position:absolute;left:22%;top:21%;z-index:2;color:#f2c94c;font-size:38px}
+.liveFlag b{display:none}
+@keyframes flagWave{to{transform:rotate(-2deg) skewY(-1deg) translateY(4px)}}
+
+.liveSkyline{position:absolute;left:0;right:0;bottom:0;height:24%;display:flex;align-items:end;gap:1.2%;padding:0 3%;background:linear-gradient(transparent,#02091b 55%)}
+.liveSkyline i{display:block;flex:1;min-width:20px;background:linear-gradient(90deg,#07162f,#0b2345,#06142d);border:1px solid #ffffff08;box-shadow:0 -2px 20px #0b3f8120}
+.liveSkyline i:nth-child(1){height:48%}.liveSkyline i:nth-child(2){height:68%}.liveSkyline i:nth-child(3){height:39%}.liveSkyline i:nth-child(4){height:77%}.liveSkyline i:nth-child(5){height:54%}
+.liveSkyline i:after{content:"";display:block;width:100%;height:100%;background:repeating-linear-gradient(90deg,transparent 0 12px,#f2c94c33 13px 15px),repeating-linear-gradient(0deg,transparent 0 15px,#f2c94c25 16px 18px);opacity:.55}
+
+.liveTower{position:absolute;bottom:12%;z-index:1}.towerPetronas{right:18%;width:105px;height:220px;display:flex;gap:15px;align-items:end}.towerPetronas i{display:block;width:40px;height:190px;border-radius:16px 16px 4px 4px;background:linear-gradient(90deg,#b7c9d8,#f7fbff 45%,#9aaebe);box-shadow:0 0 22px #cde4ff2a}.towerPetronas:before{content:"";position:absolute;left:10px;right:10px;top:58px;height:14px;border:3px solid #b7c9d8;border-radius:8px;box-shadow:0 78px 0 -2px #b7c9d8}.towerPetronas:after{content:"";position:absolute;left:16px;right:16px;top:-25px;height:90px;border-left:3px solid #dbe8f2;border-right:3px solid #dbe8f2;border-radius:50%}
+.towerKL{right:36%;width:30px;height:145px;background:linear-gradient(90deg,#aabccd,#f8fbff,#9aabba);border-radius:50% 50% 5px 5px}.towerKL:before{content:"";position:absolute;left:50%;top:-55px;width:2px;height:60px;background:#f2c94c}.towerKL:after{content:"";position:absolute;left:-17px;top:25px;width:64px;height:16px;border:2px solid #b7c9d8;border-radius:50%}
+
+.liveLight{position:absolute;border-radius:50%;background:#f2c94c;filter:blur(2px);box-shadow:0 0 35px 8px #f2c94c55;animation:lightFloat 5s ease-in-out infinite}.light1{width:7px;height:7px;left:41%;top:34%}.light2{width:5px;height:5px;right:11%;top:49%;animation-delay:1.5s}
+@keyframes lightFloat{50%{transform:translateY(-14px) scale(1.5);opacity:.5}}
+
+.liveFirework{position:absolute;width:5px;height:5px;border-radius:50%;background:#f2c94c;box-shadow:0 0 8px #f2c94c;animation:firework 3.2s ease-out infinite}
+.fw1{left:48%;top:22%}.fw2{right:9%;top:30%;animation-delay:1s}.fw3{right:34%;top:16%;animation-delay:1.8s}
+.liveFirework:before,.liveFirework:after,.liveFirework i:before,.liveFirework i:after{content:"";position:absolute;left:50%;top:50%;width:80px;height:2px;background:linear-gradient(90deg,transparent,#f2c94c,transparent);transform-origin:center}
+.liveFirework:before{transform:translate(-50%,-50%) rotate(0deg)}.liveFirework:after{transform:translate(-50%,-50%) rotate(45deg)}.liveFirework i:before{transform:translate(-50%,-50%) rotate(90deg)}.liveFirework i:after{transform:translate(-50%,-50%) rotate(135deg)}
+@keyframes firework{0%,55%{transform:scale(.15);opacity:0}65%{transform:scale(1);opacity:1}82%,100%{transform:scale(1.25);opacity:0}}
+
+.heroGrid{position:relative!important;z-index:8!important;width:min(1180px,calc(100% - 32px));margin:0 auto;padding:135px 0 70px;display:grid!important;grid-template-columns:1.15fr .85fr!important;gap:45px;align-items:end!important}
+.heroCopy{display:block!important;max-width:790px}.heroCard{display:block!important;justify-self:end!important}
+.hero h1{font-size:clamp(48px,7vw,92px);text-shadow:0 10px 40px #0009}.hero h1 span{color:#ef3038}.heroCopy .kicker{font-size:10px;letter-spacing:2.8px}.heroCopy .school{font-weight:950;letter-spacing:1.5px}.heroCopy .motto{color:#f2c94c!important;font-weight:800}
+.heroCard{border-color:#f2c94c55!important;background:#061735b8!important}
+@media(max-width:800px){
+ .hero{min-height:100svh}.heroGrid{grid-template-columns:1fr!important;padding:115px 0 50px!important;align-items:end!important}.heroCard{display:none!important}
+ .liveFlag{width:78%;height:30%;right:-18%;top:9%;opacity:.48}.liveMoon{width:70px;height:70px;top:23%;left:5%}.liveMoon:before{width:52px;height:52px;left:17px;top:-5px}.liveMoon span{font-size:12px;right:5px;bottom:11px}.towerPetronas{right:3%;transform:scale(.62);transform-origin:bottom right}.towerKL{right:28%;transform:scale(.72);transform-origin:bottom}
+ .liveSkyline{height:20%}.hero h1{font-size:clamp(39px,12vw,62px);letter-spacing:-2px}.heroCopy .meta{flex-wrap:wrap}.heroScroll{display:none}
+}
+@media(prefers-reduced-motion:reduce){.liveFlag,.liveStars,.liveFirework,.liveLight,.heroScene:before{animation:none!important}}
+
+/* REAL JALUR GEMILANG
+   Source: Wikimedia Commons — Flag of Malaysia.svg
+   Based on Malaysian government construction specifications. */
+.liveFlag{
+  position:absolute;
+  right:-5%;
+  top:5%;
+  width:52%;
+  height:37%;
+  z-index:2;
+  overflow:hidden;
+  border-radius:8px 0 0 18px;
+  transform:rotate(-4deg);
+  background:transparent;
+  box-shadow:0 22px 55px #0006;
+  opacity:.88;
+  animation:flagWave 4.8s ease-in-out infinite alternate;
+  transform-origin:left center;
+}
+.liveFlag img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:drop-shadow(0 8px 18px #0005);
+}
+.liveFlag:before,.liveFlag .crescent,.liveFlag .star,.liveFlag b{display:none!important}
+@keyframes flagWave{
+  0%{transform:rotate(-4deg) skewY(0deg) translateY(0)}
+  50%{transform:rotate(-2.7deg) skewY(-.7deg) translateY(3px)}
+  100%{transform:rotate(-3.5deg) skewY(.5deg) translateY(-1px)}
+}
+@media(max-width:800px){
+  .liveFlag{
+    width:78%;
+    height:30%;
+    right:-18%;
+    top:9%;
+    opacity:.62;
+  }
+}
 </style>
 </head>
 <body>
@@ -153,7 +297,26 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 
 <header class="hero" id="top">
   <div class="heroScene">
+    <div class="liveStars"></div>
+    <div class="liveFirework fw1"><i></i></div>
+    <div class="liveFirework fw2"><i></i></div>
+    <div class="liveFirework fw3"><i></i></div>
+    <div class="liveMoon"><span>★</span></div>
+    <div class="liveFlag" aria-label="Jalur Gemilang">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+           alt="Jalur Gemilang"
+           loading="eager"
+           decoding="async">
+    </div>
+    <div class="liveSkyline"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="liveTower towerPetronas"><i></i><i></i></div>
+    <div class="liveTower towerKL"></div>
+    <div class="liveLight light1"></div><div class="liveLight light2"></div>
   </div>
+  <div class="heroGlow glowA"></div>
+  <div class="heroGlow glowB"></div>
+  <div class="heroGrain"></div>
+  <div class="heroScroll"><span></span><small>SCROLL UNTUK TEROKAI</small></div>
   <div class="heroGrid">
     <div class="heroCopy">
       <div class="kicker">BUKU PROGRAM DIGITAL <em>•</em> 2026</div>
@@ -196,6 +359,31 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
       </div>
     </div>
   </div>
+
+</section>
+
+<section class="glanceSection" id="glance">
+  <div class="wrap">
+    <div class="ey">Program at a Glance</div>
+    <div class="glanceHead">
+      <div>
+        <h2>Tiga detik pun dah<br>tahu apa yang berlaku.</h2>
+        <p class="intro">Tiga titik penting sepanjang sambutan — dari pelancaran sehingga majlis penutup.</p>
+      </div>
+      <div class="glanceRange"><span>17 OGOS</span><i>→</i><span>15 SEPTEMBER</span></div>
+    </div>
+    <div class="milestones">
+      <a href="#pelancaran" class="milestone">
+        <div class="mNo">01</div><div class="mDate">17 OGOS</div><h3>Pelancaran</h3><p>Bulan Semarak Citra Merdeka bermula.</p><span class="mArrow">↗</span>
+      </a>
+      <a href="#ambang" class="milestone red">
+        <div class="mNo">02</div><div class="mDate">28 OGOS</div><h3>Ambang Merdeka</h3><p>Busana, hiasan kepala, basikal patriotik & nyanyian.</p><span class="mArrow">↗</span>
+      </a>
+      <a href="#penutup" class="milestone gold">
+        <div class="mNo">03</div><div class="mDate">15 SEPTEMBER</div><h3>Majlis Penutup</h3><p>Penyampaian hadiah dan persembahan pemenang.</p><span class="mArrow">↗</span>
+      </a>
+    </div>
+  </div>
 </section>
 
 <section id="tentang">
@@ -203,11 +391,11 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
   <div class="ey">01 · Tentang Program</div>
   <h2>Kenali sambutan<br>kita.</h2>
   <p class="intro">Program ini menghimpunkan pelbagai aktiviti dan pertandingan sempena Bulan Semarak Citra Merdeka di SK Sungai Isap Murni.</p>
-  <div class="stats">
-    <div class="stat"><b>69</b><span>Tahun Kemerdekaan</span></div>
-    <div class="stat"><b>17 OGOS</b><span>Majlis Pelancaran</span></div>
-    <div class="stat"><b>28 OGOS</b><span>Majlis Ambang Merdeka</span></div>
-    <div class="stat"><b>15 SEPT</b><span>Majlis Penutup</span></div>
+  <div class="stats proStats">
+    <div class="stat"><b data-count="69">0</b><span>Tahun Kemerdekaan</span></div>
+    <div class="stat"><b data-count="3">0</b><span>Majlis Utama</span></div>
+    <div class="stat"><b data-count="9">0</b><span>Aktiviti & Pertandingan</span></div>
+    <div class="stat"><b>17 OGOS</b><span>Program Bermula</span></div>
   </div>
 </div>
 </section>
@@ -229,6 +417,27 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 <section class="band" id="program"><div class="wrap">
 <div class="ey">02 · Program & Aktiviti</div><h2>Sepanjang bulan,<br>pelbagai aktiviti.</h2>
 <p class="intro">Program dan aktiviti yang disenaraikan dalam buku program rasmi sekolah.</p>
+<div class="featuredBlock">
+  <div class="featuredTop">
+    <div><div class="ey">Pilihan Utama</div><h3>Aktiviti yang jadi<br>highlight bulan ini.</h3></div>
+    <span>FEATURED</span>
+  </div>
+  <div class="featureGrid">
+    <a class="featureCard fcWide" href="#ambang">
+      <div class="fcArt"><span class="fcFlag">★</span><b>28</b><small>OGOS</small><i>MERDEKA</i></div>
+      <div class="fcCopy"><small>MAJLIS AMBANG</small><h4>Ambang Merdeka</h4><p>Busana Merdeka · Hiasan Kepala · Basikal Patriotik</p><span>Terokai ↗</span></div>
+    </a>
+    <a class="featureCard fcDark" href="#tentatif">
+      <div class="fcArt"><span class="fcSun">✦</span><b>17</b><small>OGOS</small><i>OPENING</i></div>
+      <div class="fcCopy"><small>MAJLIS 01</small><h4>Pelancaran</h4><p>Gimik pelancaran, persembahan dan lagu patriotik.</p><span>Lihat atur cara ↗</span></div>
+    </a>
+    <a class="featureCard fcGold" href="#penghargaan">
+      <div class="fcArt"><span class="fcTrophy">✦</span><b>15</b><small>SEPT</small><i>FINALE</i></div>
+      <div class="fcCopy"><small>MAJLIS 03</small><h4>Penutup</h4><p>Penyampaian hadiah & persembahan pemenang.</p><span>Terokai ↗</span></div>
+    </a>
+  </div>
+</div>
+
 <div class="timeline">
 <div class="tl"><div class="dot"></div><div class="tlcard"><time>17 OGOS 2026</time><h3>Majlis Pelancaran Bulan Semarak Citra Merdeka</h3><p>Pelancaran rasmi dan persembahan murid.</p></div></div>
 
@@ -287,8 +496,23 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 <div class="tl"><div class="dot"></div><div class="tlcard"><time>28 OGOS 2026</time><h3>Majlis Ambang Merdeka</h3><p>Program khas ambang kemerdekaan seperti yang disenaraikan dalam tentatif.</p></div></div>
 <div class="tl"><div class="dot"></div><div class="tlcard"><time>15 SEPTEMBER 2026</time><h3>Majlis Penutup</h3><p>Penutup Bulan Semarak Citra Merdeka dan penyampaian hadiah.</p></div></div>
 </div>
-</div></section>
+</div>
+</section>
 
+<section class="momentsSection">
+  <div class="wrap">
+    <div class="momentsHead">
+      <div><div class="ey">Visual Highlights</div><h2>Semangat Merdeka,<br>dalam setiap aktiviti.</h2></div>
+      <p class="intro">Ruang visual ini disediakan untuk menonjolkan detik-detik program apabila gambar aktiviti sekolah dimasukkan nanti.</p>
+    </div>
+    <div class="momentsGrid">
+      <div class="moment m1"><div><small>01 · PELANCARAN</small><b>Gimik &<br>persembahan</b></div><span>17</span></div>
+      <div class="moment m2"><div><small>02 · AMBANG</small><b>Semarak<br>patriotisme</b></div><span>28</span></div>
+      <div class="moment m3"><div><small>03 · PENUTUP</small><b>Raikan<br>kejayaan</b></div><span>15</span></div>
+      <div class="moment m4"><div><small>SIMPS · 2026</small><b>🇲🇾</b></div><span>69</span></div>
+    </div>
+  </div>
+</section>
 
 <section class="agendaSection" id="tentatif">
   <div class="wrap">
@@ -490,5 +714,30 @@ function closeSearch(){document.getElementById('searchModal').classList.remove('
 function doSearch(q){q=q.toLowerCase().trim();const r=document.getElementById('results');r.innerHTML='';if(!q)return;
 searchable.filter(x=>x[0].toLowerCase().includes(q)).forEach(x=>{const d=document.createElement('div');d.className='result';d.textContent=x[0];d.onclick=()=>{closeSearch();document.getElementById(x[1]).scrollIntoView({behavior:'smooth'})};r.appendChild(d)});if(!r.children.length)r.innerHTML='<div class="result">Tiada hasil. Cuba kata kunci lain.</div>'}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openSearch()}});
+</script>
+
+<script>
+(() => {
+  const nums = document.querySelectorAll('[data-count]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && nums.length) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target, end = Number(el.dataset.count);
+        if (reduce) { el.textContent = end; io.unobserve(el); return; }
+        const start = performance.now(), dur = 850;
+        const tick = now => {
+          const p = Math.min((now-start)/dur,1);
+          el.textContent = Math.floor(end*(1-Math.pow(1-p,3)));
+          if(p<1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        io.unobserve(el);
+      });
+    }, {threshold:.45});
+    nums.forEach(n=>io.observe(n));
+  } else nums.forEach(n=>n.textContent=n.dataset.count);
+})();
 </script>
 </body></html>
