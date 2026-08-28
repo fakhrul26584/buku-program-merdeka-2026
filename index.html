@@ -83,6 +83,14 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 .connector{height:28px;width:2px;background:#f2c94c;margin:auto}.orgRow{display:grid;gap:12px;position:relative}.orgRow.three{grid-template-columns:repeat(3,1fr)}.orgRow.four{grid-template-columns:repeat(4,1fr)}.orgRow.three:before,.orgRow.four:before{content:"";position:absolute;top:-14px;left:calc(16.66%);right:calc(16.66%);height:2px;background:#f2c94c}.orgRow.four:before{left:12.5%;right:12.5%}
 .sectionLine{display:flex;align-items:center;gap:15px;margin:42px 0 25px;color:#fff;font-weight:950;font-size:12px;letter-spacing:1.5px}.sectionLine:before,.sectionLine:after{content:"";height:1px;background:#f2c94c66;flex:1}.sectionLine span{padding:10px 17px;border:1px solid #f2c94c;background:#d71920;border-radius:999px}
 .lower{align-items:start}.orgPanel{background:#fff;border:2px solid #e2e7ef;border-radius:16px;overflow:hidden;box-shadow:0 15px 35px #0002}.orgPanel[open]{border-color:#f2c94c}.orgPanel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:17px 16px;background:linear-gradient(110deg,#fff,#f7f9fc)}.orgPanel summary::-webkit-details-marker{display:none}.orgPanel summary:after{content:"+";margin-left:auto;color:#d71920;font-size:20px;font-weight:900}.orgPanel[open] summary:after{content:"−"}.panelNo{width:31px;height:31px;border-radius:9px;display:grid;place-items:center;background:#071a3d;color:#f2c94c;font-size:10px;font-weight:950}.orgPanel summary b{display:block;color:var(--navy);font-size:12px}.orgPanel summary small{display:block;color:#7d899c;font-size:9px;margin-top:3px}.panelBody{padding:7px 16px 16px;border-top:1px solid #e5e9f0}.task{padding:12px 0;border-bottom:1px solid #edf0f4}.task:last-child{border-bottom:0}.task b{display:block;color:#d71920;font-size:10px;line-height:1.4}.task span{display:block;color:#69778d;font-size:10px;line-height:1.6;margin-top:3px}
+
+/* MODERN EVENT AGENDA */
+.agendaSection{background:#f4f6fa;padding:105px 0}.agendaTabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:38px 0 25px}.agendaTabs a{display:grid;grid-template-columns:auto 1fr;column-gap:13px;align-items:center;padding:16px 18px;background:#fff;border:1px solid #e1e6ef;border-radius:16px;text-decoration:none;color:var(--navy);box-shadow:0 10px 28px #071b450c;transition:.2s}.agendaTabs a:hover{transform:translateY(-3px);border-color:#d71920}.agendaTabs span{grid-row:span 2;font-size:29px;line-height:1;font-weight:1000;color:#d71920}.agendaTabs b{font-size:12px}.agendaTabs small{font-size:8px;letter-spacing:1.5px;color:#8591a3;font-weight:900}.eventAgenda{background:#fff;border:1px solid #dfe5ee;border-radius:22px;overflow:hidden;margin:16px 0;box-shadow:0 15px 40px #071b4510}.eventHead{display:flex;gap:18px;align-items:center;padding:22px 24px;background:linear-gradient(110deg,#071b45,#0c2b61);color:#fff}.eventDate{width:75px;height:75px;flex:0 0 75px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:3px;background:#fff;color:#071b45;box-shadow:0 10px 25px #0003}.eventDate strong{font-size:32px;line-height:1;font-weight:1000}.eventDate span{font-size:8px;line-height:1.25;font-weight:950;letter-spacing:.6px}.eventDate.red{background:#d71920;color:#fff}.eventDate.gold{background:#f2c94c;color:#071b45}.eventTag{font-size:8px;letter-spacing:2px;color:#f2c94c;font-weight:950;margin-bottom:5px}.eventHead h3{font-size:19px;margin:0 0 4px}.eventHead p{font-size:10px;margin:0;color:#c5d1e4}.agendaTimeline{padding:8px 25px 18px}.agendaItem{display:grid;grid-template-columns:78px 1fr;gap:18px;padding:18px 5px;border-bottom:1px solid #edf0f4;position:relative}.agendaItem:last-child{border-bottom:0}.agendaItem:before{content:"";position:absolute;left:84px;top:0;bottom:-1px;width:1px;background:#e3e7ee;transform:translateX(-50%)}.agendaItem time{font-size:14px;font-weight:1000;color:#d71920;line-height:1.1;text-align:right;padding-right:20px;position:relative;z-index:2;background:#fff}.agendaItem time small{font-size:7px;letter-spacing:1px;color:#8a95a5}.agendaItem div>b{display:block;font-size:12px;color:var(--navy);margin-bottom:4px}.agendaItem div>span{font-size:10px;color:#78869a;line-height:1.6}.agendaItem:after{content:"";position:absolute;left:84px;top:23px;width:8px;height:8px;border-radius:50%;background:#d71920;transform:translate(-50%,-50%);box-shadow:0 0 0 4px #fff;z-index:3}.agendaItem.highlight{background:linear-gradient(90deg,#fff9e9,transparent);margin:0 -5px;padding-left:5px;padding-right:5px}.agendaItem.highlight:after{background:#f2c94c}.agendaItem.end time{color:#071b45}.agendaItem.end:after{background:#071b45}.miniPills{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}.miniPills i{font-style:normal;font-size:8px;font-weight:850;padding:5px 8px;border-radius:999px;background:#eef2f8;color:#53627a}.agendaNote{display:flex;gap:13px;align-items:flex-start;margin-top:22px;padding:18px 20px;border-radius:16px;background:#071b45;color:#fff}.agendaNote>span{color:#f2c94c;font-size:18px}.agendaNote b{font-size:11px}.agendaNote p{margin:4px 0 0;color:#b9c6da;font-size:9px;line-height:1.6}
+@media(max-width:800px){.agendaTabs{grid-template-columns:1fr}.eventHead{padding:18px}.eventHead h3{font-size:16px}.agendaTimeline{padding-left:12px;padding-right:12px}.agendaItem{grid-template-columns:65px 1fr;gap:13px}.agendaItem:before,.agendaItem:after{left:70px}.agendaItem time{padding-right:15px}}
+
+/* PROGRAM ACTIVITY CARDS */
+.activityCard{padding-bottom:25px}.activityIntro{margin-bottom:17px!important;color:#77869a!important;font-size:10px!important}.activityGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}.activityItem{border:1px solid #e3e7ee;border-radius:13px;overflow:hidden;background:#fbfcfe;transition:.2s}.activityItem:hover{transform:translateY(-2px);box-shadow:0 10px 24px #071b4512;border-color:#cdd6e4}.activityItem[open]{background:#fff;border-color:#f2c94c}.activityItem summary{list-style:none;display:flex;align-items:center;gap:10px;padding:13px;cursor:pointer;min-height:70px}.activityItem summary::-webkit-details-marker{display:none}.activityItem summary:after{content:"+";margin-left:auto;color:#d71920;font-size:16px;font-weight:900}.activityItem[open] summary:after{content:"−"}.activityIcon{width:35px;height:35px;flex:0 0 35px;border-radius:9px;display:grid;place-items:center;background:#eef2f7;font-size:17px}.activityItem b{display:block;color:#071b45;font-size:10px;line-height:1.35}.activityItem small{display:block;color:#7c899b;font-size:8px;line-height:1.35;margin-top:3px}.activityInfo{padding:10px 13px 12px;border-top:1px solid #edf0f4;background:#fff}.activityInfo strong{display:block;color:#d71920;font-size:9px}.activityInfo span{display:block;color:#718095;font-size:8px;line-height:1.5;margin-top:3px}.activityItem.special{border-color:#d71920}.activityItem.special .activityIcon{background:#fff0f0}
+@media(max-width:900px){.activityGrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.activityGrid{grid-template-columns:1fr}.activityItem summary{min-height:64px}}
 </style>
 </head>
 <body>
@@ -175,21 +183,124 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 <p class="intro">Program dan aktiviti yang disenaraikan dalam buku program rasmi sekolah.</p>
 <div class="timeline">
 <div class="tl"><div class="dot"></div><div class="tlcard"><time>17 OGOS 2026</time><h3>Majlis Pelancaran Bulan Semarak Citra Merdeka</h3><p>Pelancaran rasmi dan persembahan murid.</p></div></div>
-<div class="tl"><div class="dot"></div><div class="tlcard"><time>17 OGOS – 11 SEPTEMBER</time><h3>Pertandingan & Aktiviti Merdeka</h3><p>06 · Kalender Program Program Bulan Semarak Citra Merdeka 2026 Aktiviti Tarikh Majlis Pelancaran Bulan Semarak Citra Merdeka 17 Ogos Pertandingan Buku Skrap Tokoh Sejarah (Semua murid Tahap 2) 17 Ogos – 11 September Pertandingan Kelas Ceria Merdeka (Kelas Tahap 1, 2 dan 3) 17 Ogos – 11 September Pertandingan Mewarna dan Gosokan (Tahun 1,2,3,4,5 dan 6) 17 Ogos – 28 Ogos Pertandingan Montaj Merdeka (Tahun 1,2,3,4,5 dan 6) 24 Ogos – 11 September Kuiz Hari Ini Dalam Sejarah (Semua murid Tahap 2) 24 Ogos – 11 September Pameran Kemerdekaan PSS (Tahun 1,2,3,4,5 dan 6) 17 – 28 Ogos Kuiz Merdeka PSS (online) (Tahun 1,2,3,4,5 dan 6) 17 – 28 Ogos Pertandingan Kembara Merdeka 3.0 26 Ogos Majlis Ambang Merdeka — Busana Merdeka (Prasekolah &amp; Tahun 1), Hiasan Kepala Merdeka (Tahun 2–6), Basikal Patriotik (Tahun 4–6) 28 Ogos Nyanyian Solo (Tahun 1,2,3,4,5 dan 6) 9 September Majlis Penutup Bulan Semarak Citra Merdeka 15 September 6</p></div></div>
+
+<div class="tl activityTimeline"><div class="dot"></div><div class="tlcard activityCard">
+  <time>17 OGOS – 11 SEPTEMBER 2026</time>
+  <h3>Pertandingan & Aktiviti Merdeka</h3>
+  <p class="activityIntro">Klik mana-mana aktiviti untuk lihat tarikh dan kumpulan yang terlibat.</p>
+
+  <div class="activityGrid">
+    <details class="activityItem" open>
+      <summary><span class="activityIcon">📚</span><div><b>Buku Skrap Tokoh Sejarah</b><small>Semua murid Tahap 2</small></div></summary>
+      <div class="activityInfo"><strong>17 Ogos – 11 September</strong><span>Semua murid Tahap 2</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">🏫</span><div><b>Kelas Ceria Merdeka</b><small>Kelas Tahap 1, 2 dan 3</small></div></summary>
+      <div class="activityInfo"><strong>17 Ogos – 11 September</strong><span>Kelas Tahap 1, 2 dan 3</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">🎨</span><div><b>Mewarna dan Gosokan</b><small>Tahun 1, 2, 3, 4, 5 dan 6</small></div></summary>
+      <div class="activityInfo"><strong>17 Ogos – 28 Ogos</strong><span>Tahun 1, 2, 3, 4, 5 dan 6</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">🖼️</span><div><b>Pertandingan Montaj Merdeka</b><small>Tahun 1, 2, 3, 4, 5 dan 6</small></div></summary>
+      <div class="activityInfo"><strong>17 Ogos – 11 September</strong><span>Tahun 1, 2, 3, 4, 5 dan 6</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">🔎</span><div><b>Pameran Kemerdekaan PSS</b><small>Tahun 1, 2, 3, 4, 5 dan 6</small></div></summary>
+      <div class="activityInfo"><strong>24 Ogos – 11 September</strong><span>Tahun 1, 2, 3, 4, 5 dan 6</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">💻</span><div><b>Kuiz Merdeka PSS</b><small>Online · Tahun 1 hingga 6</small></div></summary>
+      <div class="activityInfo"><strong>17 Ogos – 28 Ogos</strong><span>Online · Tahun 1, 2, 3, 4, 5 dan 6</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">🚴</span><div><b>Pertandingan Kembara Merdeka 3.0</b><small>Aktiviti kemuncak</small></div></summary>
+      <div class="activityInfo"><strong>26 Ogos</strong><span>Pertandingan Kembara Merdeka 3.0</span></div>
+    </details>
+
+    <details class="activityItem special">
+      <summary><span class="activityIcon">🇲🇾</span><div><b>Majlis Ambang Merdeka</b><small>Busana · Hiasan Kepala · Basikal Patriotik</small></div></summary>
+      <div class="activityInfo"><strong>28 Ogos</strong><span>Busana Merdeka · Hiasan Kepala Merdeka · Basikal Patriotik</span></div>
+    </details>
+
+    <details class="activityItem">
+      <summary><span class="activityIcon">🎤</span><div><b>Nyanyian Solo</b><small>Tahun 1, 2, 3, 4, 5 dan 6</small></div></summary>
+      <div class="activityInfo"><strong>28 Ogos</strong><span>Tahun 1, 2, 3, 4, 5 dan 6</span></div>
+    </details>
+  </div>
+</div></div>
 <div class="tl"><div class="dot"></div><div class="tlcard"><time>28 OGOS 2026</time><h3>Majlis Ambang Merdeka</h3><p>Program khas ambang kemerdekaan seperti yang disenaraikan dalam tentatif.</p></div></div>
 <div class="tl"><div class="dot"></div><div class="tlcard"><time>15 SEPTEMBER 2026</time><h3>Majlis Penutup</h3><p>Penutup Bulan Semarak Citra Merdeka dan penyampaian hadiah.</p></div></div>
 </div>
 </div></section>
 
-<section id="tentatif"><div class="wrap">
-<div class="ey">03 · Tentatif</div><h2>Atur cara,<br>sekali pandang.</h2>
-<p class="intro">Buka setiap majlis untuk melihat atur cara tanpa perlu menyelak halaman PDF.</p>
-<div class="schedule">
-<details class="sched" open><summary><div>Majlis Pelancaran</div><span>17 OGOS 2026</span></summary><div class="schedBody">07 · Tentatif Tentatif Majlis Majlis Pelancaran Bulan Semarak Citra Merdeka 17 Ogos 2026 (Isnin) 7.20 pagi Murid berkumpul di Dewan Ibnu Bhatutah 7.30 pagi Perhimpunan bermula Ucapan penyelaras Ucapan Guru Besar SK Sungai Isap Murni Gimik Pelancaran Persembahan murid Nyanyian 4 buah lagu patriotik: Keranamu, Jalur Gemilang, Kita Punya Malaysia dan Saya Anak Malaysia 9.10 pagi Bersurai Majlis Ambang Merdeka 28 Ogos 2026 (Jumaat) 7.30 pagi Murid berkumpul di Dewan Ibnu Bhatutah Bacaan Yasin Pertandingan Persembahan Busana Merdeka Pertandingan Hiasan Kepala Merdeka Pertandingan Basikal Patriotik Nyanyian lagu Patriotik Tanggal 31 dan Malaysia Kita Punya 10.00 pagi Bersurai Majlis Penutup Bulan Semarak Citra Merdeka 15 September 2026 (Selasa) 10.30 pagi Murid berkumpul di Dewan Ibnu Bhatutah Penyampaian hadiah Persembahan pemenang nyanyian solo 12.30 tengah hari Bersurai 7</div></details>
-<details class="sched"><summary><div>Majlis Ambang Merdeka</div><span>28 OGOS 2026</span></summary><div class="schedBody">Tentatif Majlis Ambang Merdeka seperti dalam buku program rasmi.</div></details>
-<details class="sched"><summary><div>Majlis Penutup</div><span>15 SEPTEMBER 2026</span></summary><div class="schedBody">10.30 pagi · Majlis Penutup Bulan Semarak Citra Merdeka dan penyampaian hadiah.</div></details>
-</div>
-</div></section>
+
+<section class="agendaSection" id="tentatif">
+  <div class="wrap">
+    <div class="ey">03 · Atur Cara</div>
+    <h2>Atur cara yang<br>senang diikuti.</h2>
+    <p class="intro">Tiga majlis utama disusun sebagai event timeline — masa, aktiviti dan pergerakan majlis terus nampak tanpa perlu membaca perenggan panjang.</p>
+
+    <div class="agendaTabs">
+      <a href="#pelancaran"><span>17</span><b>Pelancaran</b><small>OGOS</small></a>
+      <a href="#ambang"><span>28</span><b>Ambang Merdeka</b><small>OGOS</small></a>
+      <a href="#penutup"><span>15</span><b>Penutup</b><small>SEPTEMBER</small></a>
+    </div>
+
+    <article class="eventAgenda" id="pelancaran">
+      <header class="eventHead">
+        <div class="eventDate"><strong>17</strong><span>OGOS<br>2026</span></div>
+        <div><div class="eventTag">MAJLIS 01</div><h3>Pelancaran Bulan Semarak Citra Merdeka</h3><p>Isnin · Dewan Ibnu Bhatutah</p></div>
+      </header>
+      <div class="agendaTimeline">
+        <div class="agendaItem"><time>7.20<br><small>PAGI</small></time><div><b>Murid berkumpul</b><span>Semua murid berkumpul di Dewan Ibnu Bhatutah.</span></div></div>
+        <div class="agendaItem"><time>7.30<br><small>PAGI</small></time><div><b>Perhimpunan bermula</b><span>Ucapan Penyelaras · Ucapan Guru Besar SK Sungai Isap Murni</span></div></div>
+        <div class="agendaItem highlight"><time>08.00<br><small>PAGI</small></time><div><b>Gimik Pelancaran</b><span>Gimik pelancaran diikuti persembahan murid.</span></div></div>
+        <div class="agendaItem"><time>08.30<br><small>PAGI</small></time><div><b>Nyanyian lagu patriotik</b><div class="miniPills"><i>Keranamu</i><i>Jalur Gemilang</i><i>Kita Punya Malaysia</i><i>Saya Anak Malaysia</i></div></div></div>
+        <div class="agendaItem end"><time>9.10<br><small>PAGI</small></time><div><b>Bersurai</b></div></div>
+      </div>
+    </article>
+
+    <article class="eventAgenda" id="ambang">
+      <header class="eventHead">
+        <div class="eventDate red"><strong>28</strong><span>OGOS<br>2026</span></div>
+        <div><div class="eventTag">MAJLIS 02</div><h3>Majlis Ambang Merdeka</h3><p>Jumaat · Dewan Ibnu Bhatutah</p></div>
+      </header>
+      <div class="agendaTimeline">
+        <div class="agendaItem"><time>7.30<br><small>PAGI</small></time><div><b>Murid berkumpul</b><span>Semua murid berkumpul di Dewan Ibnu Bhatutah.</span></div></div>
+        <div class="agendaItem"><time>—</time><div><b>Bacaan Yasin</b><span>Pengisian kerohanian sebelum pertandingan bermula.</span></div></div>
+        <div class="agendaItem"><time>—</time><div><b>Pertandingan Busana Merdeka</b><span>Prasekolah dan Tahun 1</span></div></div>
+        <div class="agendaItem"><time>—</time><div><b>Pertandingan Hiasan Kepala Merdeka</b><span>Tahun 2, 3, 4, 5 dan 6</span></div></div>
+        <div class="agendaItem"><time>—</time><div><b>Pertandingan Basikal Patriotik</b><span>Tahun 4, 5 dan 6</span></div></div>
+        <div class="agendaItem highlight"><time>—</time><div><b>Nyanyian Lagu Patriotik</b><div class="miniPills"><i>Tanggal 31</i><i>Malaysia Kita Punya</i></div></div></div>
+        <div class="agendaItem end"><time>10.00<br><small>PAGI</small></time><div><b>Bersurai</b></div></div>
+      </div>
+    </article>
+
+    <article class="eventAgenda" id="penutup">
+      <header class="eventHead">
+        <div class="eventDate gold"><strong>15</strong><span>SEPT<br>2026</span></div>
+        <div><div class="eventTag">MAJLIS 03</div><h3>Penutup Bulan Semarak Citra Merdeka</h3><p>Selasa · Dewan Ibnu Bhatutah</p></div>
+      </header>
+      <div class="agendaTimeline">
+        <div class="agendaItem"><time>10.30<br><small>PAGI</small></time><div><b>Murid berkumpul</b><span>Semua murid berkumpul di Dewan Ibnu Bhatutah.</span></div></div>
+        <div class="agendaItem highlight"><time>—</time><div><b>Penyampaian hadiah</b><span>Pengiktirafan kepada pemenang aktiviti dan pertandingan.</span></div></div>
+        <div class="agendaItem"><time>—</time><div><b>Persembahan pemenang Nyanyian Solo</b><span>Persembahan khas pemenang pertandingan Nyanyian Solo.</span></div></div>
+        <div class="agendaItem end"><time>12.30<br><small>TENGAH HARI</small></time><div><b>Bersurai</b></div></div>
+      </div>
+    </article>
+
+    <div class="agendaNote"><span>✦</span><div><b>Nota</b><p>Aktiviti pertandingan sepanjang Bulan Semarak Citra Merdeka berlangsung mengikut tarikh yang ditetapkan dalam kalender program.</p></div></div>
+  </div>
+</section>
+
 
 
 <section class="orgSection" id="urusetia">
