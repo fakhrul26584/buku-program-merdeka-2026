@@ -377,6 +377,193 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 @media(prefers-reduced-motion:reduce){
   .liveFlag,.merdekaMotif{animation:none!important}
 }
+
+/* =========================================================
+   EDITORIAL SECTIONS · TENTANG PROGRAM / TEROKAI KANDUNGAN
+   ========================================================= */
+.aboutSection, .contentSection, #tentang, #kandungan{position:relative;overflow:hidden}
+#tentang{
+  padding:92px 0 100px!important;
+  background:
+    radial-gradient(circle at 92% 12%,#f2c94c18,transparent 24%),
+    linear-gradient(180deg,#f8fafc 0%,#ffffff 72%);
+}
+#tentang:before{
+  content:"SIMPS · 2026";
+  position:absolute;right:-18px;top:72px;
+  font-size:clamp(70px,12vw,170px);font-weight:1000;
+  letter-spacing:-6px;line-height:1;color:#071b4507;
+  transform:rotate(-90deg);transform-origin:center;
+}
+#tentang .wrap{position:relative;z-index:2}
+#tentang h2{
+  font-size:clamp(34px,5vw,58px)!important;
+  letter-spacing:-2px!important;line-height:.95!important;
+  max-width:720px;margin:7px 0 16px!important;color:#071b45!important;
+}
+#tentang .intro{max-width:650px;font-size:12px;line-height:1.8;color:#65758d}
+#tentang .ey{color:#d71920;letter-spacing:2px}
+#tentang .aboutGrid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:38px;
+}
+.aboutMain{
+  position:relative;min-height:340px;padding:34px;border-radius:26px;
+  overflow:hidden;background:#071b45;color:#fff;
+  box-shadow:0 24px 55px #071b4518;
+}
+.aboutMain:before{
+  content:"";position:absolute;width:330px;height:330px;border:1px solid #f2c94c35;
+  border-radius:50%;right:-115px;top:-105px;
+}
+.aboutMain:after{
+  content:"";position:absolute;width:180px;height:180px;border:1px solid #fff12;
+  transform:rotate(45deg);right:-45px;bottom:-80px;
+}
+.aboutMain .aboutTag{display:inline-flex;padding:7px 10px;border:1px solid #f2c94c66;border-radius:999px;color:#f2c94c;font-size:8px;font-weight:950;letter-spacing:1.5px}
+.aboutMain h3{font-size:31px;line-height:1.02;max-width:440px;margin:22px 0 12px}
+.aboutMain p{max-width:520px;color:#b7c5d8;font-size:11px;line-height:1.8}
+.aboutMeta{display:flex;gap:9px;flex-wrap:wrap;margin-top:25px}
+.aboutMeta span{padding:8px 10px;border-radius:10px;background:#ffffff0d;border:1px solid #ffffff13;font-size:8px;font-weight:850;color:#dce5f2}
+.aboutSide{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+.aboutMini{
+  position:relative;padding:24px;border-radius:22px;background:#fff;border:1px solid #dfe5ee;
+  overflow:hidden;transition:.25s;
+}
+.aboutMini:hover{transform:translateY(-4px);box-shadow:0 18px 38px #071b4514}
+.aboutMini .num{font-size:10px;color:#d71920;font-weight:1000;letter-spacing:1.4px}
+.aboutMini h4{margin:16px 0 7px;font-size:21px;color:#071b45}
+.aboutMini p{margin:0;color:#718095;font-size:10px;line-height:1.65}
+.aboutMini .miniIcon{position:absolute;right:20px;top:20px;width:42px;height:42px;border-radius:14px;background:#fff6da;border:1px solid #f2c94c55;display:grid;place-items:center;color:#a06b00;font-size:18px}
+.aboutMini.red .miniIcon{background:#fff0f0;border-color:#d7192030;color:#d71920}
+
+/* "Terokai Kandungan" as a visual index */
+#kandungan{
+  padding:92px 0 100px!important;
+  background:#071b45!important;color:#fff;
+}
+#kandungan .wrap{position:relative;z-index:2}
+#kandungan h2{color:#fff!important;font-size:clamp(34px,5vw,58px)!important;letter-spacing:-2px!important;line-height:.95!important}
+#kandungan .intro{color:#aebdd3;max-width:580px;line-height:1.8}
+.contentIndex{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px;
+}
+.contentTile{
+  position:relative;display:block;min-height:175px;padding:22px;text-decoration:none;color:#fff;
+  border:1px solid #ffffff16;border-radius:20px;overflow:hidden;
+  background:linear-gradient(145deg,#0c2d5d,#081a39);
+  transition:.25s;
+}
+.contentTile:hover{transform:translateY(-6px);border-color:#f2c94c66;box-shadow:0 20px 45px #0003}
+.contentTile:before{content:"";position:absolute;width:120px;height:120px;border:1px solid #f2c94c18;border-radius:50%;right:-45px;top:-45px}
+.contentTile .ctNo{font-size:9px;letter-spacing:1.5px;color:#f2c94c;font-weight:1000}
+.contentTile h3{font-size:20px;margin:31px 0 7px;line-height:1.05}
+.contentTile p{margin:0;color:#9eb0c8;font-size:9px;line-height:1.55;max-width:220px}
+.contentTile .ctArrow{position:absolute;right:19px;bottom:18px;width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:#ffffff0d;border:1px solid #ffffff18;font-size:14px}
+.contentTile.feature{grid-column:span 2;background:linear-gradient(135deg,#d71920,#97141b)}
+.contentTile.feature .ctNo{color:#f7d66b}.contentTile.feature p{color:#ffd6d6}
+.contentTile.gold{background:linear-gradient(135deg,#d99b1c,#8e5e0b);color:#071b45}.contentTile.gold .ctNo{color:#071b45}.contentTile.gold p{color:#071b45b8}
+.contentTile.gold .ctArrow{background:#071b4512;border-color:#071b4522}
+
+@media(max-width:800px){
+  #tentang,#kandungan{padding:70px 0 76px!important}
+  #tentang .aboutGrid{grid-template-columns:1fr}
+  .aboutMain{min-height:300px;padding:26px}
+  .aboutSide{grid-template-rows:auto}
+  .contentIndex{grid-template-columns:1fr 1fr}
+  .contentTile.feature{grid-column:span 2}
+}
+@media(max-width:520px){
+  #tentang h2,#kandungan h2{font-size:37px!important}
+  .contentIndex{grid-template-columns:1fr}
+  .contentTile.feature{grid-column:span 1}
+  .contentTile{min-height:150px}
+  .aboutMain h3{font-size:27px}
+}
+
+/* Reliable flag wave: use the verified static Jalur Gemilang SVG, animate the image itself. */
+.liveFlag{perspective:700px;overflow:hidden}
+.liveFlag img{
+  transform-origin:left center;
+  animation:realFlagWave 4.6s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes realFlagWave{
+  0%{transform:scaleX(1) skewY(0deg) rotate(0deg)}
+  35%{transform:scaleX(.96) skewY(-1.2deg) rotate(-.6deg)}
+  70%{transform:scaleX(1.015) skewY(.8deg) rotate(.4deg)}
+  100%{transform:scaleX(.97) skewY(-.6deg) rotate(-.3deg)}
+}
+
+/* =========================================================
+   FINAL EDITORIAL REDESIGN · ABOUT + CONTENT INDEX
+   ========================================================= */
+.aboutTitleRow,.exploreTop{display:flex;align-items:end;justify-content:space-between;gap:28px}
+.aboutTitleRow{margin-top:6px}
+.aboutTitleRow h2{margin-bottom:12px!important}
+.aboutTitleRow h2 span{color:#d71920}
+.aboutSeal,.exploreIndex{
+  flex:0 0 auto;width:112px;height:112px;border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border:1px solid #f2c94c;box-shadow:inset 0 0 0 8px #f2c94c12;
+  color:#071b45;background:#fff
+}
+.aboutSeal b{font-size:34px;line-height:1;font-weight:1000}
+.aboutSeal small,.exploreIndex span{text-align:center;font-size:7px;letter-spacing:1.2px;font-weight:950;line-height:1.35}
+.aboutLines{position:absolute;left:0;right:0;bottom:0;height:5px;background:linear-gradient(90deg,#d71920 0 34%,#fff 34% 66%,#f2c94c 66%)}
+.exploreIndex{background:#0b2b58;border-color:#f2c94c55;color:#fff}
+.exploreIndex b{font-size:37px;line-height:1;color:#f2c94c}
+.exploreIndex span{color:#b7c5d8;margin-top:5px}
+.explorer{
+  position:relative;overflow:hidden;padding:92px 0 100px!important;
+  background:#071b45!important;color:#fff!important;
+}
+.explorer:before{
+  content:"";position:absolute;inset:auto -10% -70% 35%;height:620px;
+  border:1px solid #f2c94c16;border-radius:50%;transform:rotate(-12deg)
+}
+.explorer .wrap{position:relative;z-index:2}
+.explorer h2{color:#fff!important;font-size:clamp(34px,5vw,58px)!important;letter-spacing:-2px!important;line-height:.95!important;margin:7px 0 14px!important}
+.explorer .intro{color:#aebdd3;max-width:590px}
+.exploreGrid{
+  display:grid!important;grid-template-columns:1.25fr .9fr .9fr;gap:12px!important;
+  margin-top:38px!important;
+}
+.exploreCard{
+  position:relative;display:flex!important;flex-direction:column;justify-content:flex-end;
+  min-height:176px!important;padding:22px!important;text-decoration:none;color:#fff!important;
+  border:1px solid #ffffff16!important;border-radius:20px!important;overflow:hidden;
+  background:linear-gradient(145deg,#0d315f,#081a39)!important;transition:.25s
+}
+.exploreCard:hover{transform:translateY(-6px);border-color:#f2c94c66!important;box-shadow:0 22px 48px #0004}
+.exploreCard:before{content:"";position:absolute;width:140px;height:140px;border:1px solid #f2c94c18;border-radius:50%;right:-55px;top:-55px}
+.exploreCard .exploreNo{position:absolute;left:20px;top:18px;color:#f2c94c;font-size:9px;letter-spacing:1.5px;font-weight:1000}
+.exploreIcon{position:absolute;right:20px;top:17px;width:39px;height:39px;border-radius:13px;display:grid;place-items:center;border:1px solid #ffffff18;background:#ffffff09;color:#f2c94c;font-size:18px}
+.exploreCard b{position:relative;font-size:21px;line-height:1.05;margin-top:auto}
+.exploreCard small{position:relative;margin-top:7px;color:#9eb0c8;font-size:9px}
+.exploreCard i{position:absolute;right:20px;bottom:18px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#ffffff0d;border:1px solid #ffffff18;font-style:normal}
+.exploreCard.cardWide{grid-column:span 2;min-height:205px!important;background:linear-gradient(135deg,#d71920,#8f131a)!important}
+.exploreCard.cardWide .exploreIcon{background:#ffffff14;border-color:#ffffff25;color:#f2c94c}
+.exploreCard.cardWide small{color:#ffd6d6}
+.exploreCard.cardGold{background:linear-gradient(135deg,#dba01e,#8b5c0b)!important;color:#071b45!important}
+.exploreCard.cardGold .exploreNo,.exploreCard.cardGold .exploreIcon{color:#071b45}
+.exploreCard.cardGold small{color:#071b4599}
+.exploreCard.cardGold i{background:#071b4512;border-color:#071b4522}
+.exploreCard.cardRed{background:linear-gradient(135deg,#102f5c,#071b45)!important}
+
+@media(max-width:800px){
+  .aboutTitleRow,.exploreTop{align-items:flex-start}
+  .aboutSeal,.exploreIndex{width:88px;height:88px}
+  .aboutSeal b,.exploreIndex b{font-size:28px}
+  .exploreGrid{grid-template-columns:1fr 1fr!important}
+  .exploreCard.cardWide{grid-column:span 2}
+}
+@media(max-width:520px){
+  .aboutTitleRow,.exploreTop{display:block}
+  .aboutSeal,.exploreIndex{display:none}
+  .exploreGrid{grid-template-columns:1fr!important}
+  .exploreCard.cardWide{grid-column:span 1}
+  .exploreCard{min-height:150px!important}
+}
 </style>
 </head>
 <body>
@@ -397,7 +584,7 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
     <div class="liveFirework fw3"><i></i></div>
     <div class="liveMoon"><span>★</span></div>
     <div class="liveFlag" aria-label="Jalur Gemilang">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Malaysia-flag-animation.svg"
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
            alt="Jalur Gemilang"
            loading="eager"
            decoding="async">
@@ -481,34 +668,95 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
   </div>
 </section>
 
-<section id="tentang">
-<div class="wrap">
-  <div class="ey">01 · Tentang Program</div>
-  <h2>Kenali sambutan<br>kita.</h2>
-  <p class="intro">Program ini menghimpunkan pelbagai aktiviti dan pertandingan sempena Bulan Semarak Citra Merdeka di SK Sungai Isap Murni.</p>
-  <div class="stats proStats">
-    <div class="stat"><b data-count="69">0</b><span>Tahun Kemerdekaan</span></div>
-    <div class="stat"><b data-count="3">0</b><span>Majlis Utama</span></div>
-    <div class="stat"><b data-count="9">0</b><span>Aktiviti & Pertandingan</span></div>
-    <div class="stat"><b>17 OGOS</b><span>Program Bermula</span></div>
-  </div>
-</div>
-</section>
-
-
-<section class="explorer">
+<section id="tentang" class="aboutSection">
   <div class="wrap">
-    <div class="ey">Terokai Kandungan</div>
-    <div class="exploreGrid">
-      <a href="#tentang"><span>▣</span><b>Tentang</b><small>Latar & objektif</small></a>
-      <a href="#program"><span>◈</span><b>Program</b><small>Aktiviti merdeka</small></a>
-      <a href="#tentatif"><span>◷</span><b>Tentatif</b><small>Jadual majlis</small></a>
-      <a href="#urusetia"><span>♙</span><b>Jawatankuasa</b><small>Urusetia program</small></a>
-      <a href="#lagu"><span>♪</span><b>Lagu Patriotik</b><small>Nyanyian bersama</small></a>
-      <a href="#penghargaan"><span>♡</span><b>Penghargaan</b><small>Sekalung budi</small></a>
+    <div class="ey">01 · TENTANG PROGRAM</div>
+    <div class="aboutTitleRow">
+      <div>
+        <h2>Bukan sekadar sambutan.<br><span>Ini bulan untuk diraikan bersama.</span></h2>
+        <p class="intro">Program ini menghimpunkan pelbagai aktiviti dan pertandingan sempena Bulan Semarak Citra Merdeka di SK Sungai Isap Murni.</p>
+      </div>
+      <div class="aboutSeal" aria-hidden="true"><b>69</b><small>TAHUN<br>KEMERDEKAAN</small></div>
+    </div>
+
+    <div class="aboutGrid">
+      <article class="aboutMain">
+        <span class="aboutTag">CITRA MERDEKA · SIMPS 2026</span>
+        <h3>Malaysia Madani:<br>Kesejahteraan Dinikmati</h3>
+        <p>Rangkaian program dan aktiviti yang menghimpunkan warga sekolah melalui pelancaran, pertandingan, aktiviti patriotik dan majlis penutup sepanjang tempoh sambutan.</p>
+        <div class="aboutMeta">
+          <span>17 OGOS 2026</span>
+          <span>15 SEPTEMBER 2026</span>
+          <span>SK SUNGAI ISAP MURNI</span>
+        </div>
+        <div class="aboutLines"></div>
+      </article>
+
+      <div class="aboutSide">
+        <article class="aboutMini">
+          <span class="miniIcon">01</span>
+          <div class="num">TEMPOH SAMBUTAN</div>
+          <h4>17 Ogos → 15 September</h4>
+          <p>Program berlangsung sepanjang tempoh sambutan dengan aktiviti yang disusun mengikut tarikh dan kumpulan sasaran.</p>
+        </article>
+        <article class="aboutMini red">
+          <span class="miniIcon">✦</span>
+          <div class="num">FOKUS PROGRAM</div>
+          <h4>Patriotisme · Kreativiti · Penyertaan</h4>
+          <p>Pelbagai aktiviti merdeka, pertandingan dan persembahan untuk menghidupkan semangat sambutan di sekolah.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="stats proStats">
+      <div class="stat"><b data-count="69">0</b><span>Tahun Kemerdekaan</span></div>
+      <div class="stat"><b data-count="3">0</b><span>Majlis Utama</span></div>
+      <div class="stat"><b data-count="9">0</b><span>Aktiviti & Pertandingan</span></div>
+      <div class="stat"><b>17 OGOS</b><span>Program Bermula</span></div>
     </div>
   </div>
 </section>
+
+<section class="explorer" id="kandungan">
+  <div class="wrap">
+    <div class="exploreTop">
+      <div>
+        <div class="ey">TEROKAI KANDUNGAN</div>
+        <h2>Semuanya di satu tempat.</h2>
+        <p class="intro">Pilih bahagian yang ingin diterokai. Setiap kad membawa anda terus ke kandungan berkaitan.</p>
+      </div>
+      <div class="exploreIndex"><b>06</b><span>BAHAGIAN<br>UTAMA</span></div>
+    </div>
+
+    <div class="exploreGrid">
+      <a class="exploreCard cardWide" href="#program">
+        <span class="exploreNo">01</span><div class="exploreIcon">✦</div>
+        <b>Program & Aktiviti</b><small>Aktiviti merdeka</small><i>↗</i>
+      </a>
+      <a class="exploreCard" href="#tentatif">
+        <span class="exploreNo">02</span><div class="exploreIcon">◷</div>
+        <b>Tentatif</b><small>Jadual majlis</small><i>↗</i>
+      </a>
+      <a class="exploreCard cardGold" href="#urusetia">
+        <span class="exploreNo">03</span><div class="exploreIcon">◎</div>
+        <b>Jawatankuasa</b><small>Urusetia program</small><i>↗</i>
+      </a>
+      <a class="exploreCard" href="#lagu">
+        <span class="exploreNo">04</span><div class="exploreIcon">♪</div>
+        <b>Lagu Patriotik</b><small>Nyanyian bersama</small><i>↗</i>
+      </a>
+      <a class="exploreCard" href="#penghargaan">
+        <span class="exploreNo">05</span><div class="exploreIcon">♡</div>
+        <b>Penghargaan</b><small>Sekalung budi</small><i>↗</i>
+      </a>
+      <a class="exploreCard cardRed" href="#tentang">
+        <span class="exploreNo">06</span><div class="exploreIcon">01</div>
+        <b>Tentang Program</b><small>Latar & ringkasan</small><i>↗</i>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="band" id="program"><div class="wrap">
 <div class="ey">02 · Program & Aktiviti</div><h2>Sepanjang bulan,<br>pelbagai aktiviti.</h2>
 <p class="intro">Program dan aktiviti yang disenaraikan dalam buku program rasmi sekolah.</p>
