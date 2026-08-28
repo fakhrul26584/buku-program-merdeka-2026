@@ -791,6 +791,92 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
 .lyricEmpty strong{display:block;color:#071b45;font-size:11px}
 .lyricEmpty p{margin:4px 0 0;color:#718095;font-size:9px;line-height:1.6}
 .galleryQR .qrFrame img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important}
+
+/* =========================================================
+   LIRIK · FINAL CONTENT + MOBILE FRIENDLY ACCORDION
+   ========================================================= */
+#lagu .lyricCard{display:block!important;background:#fff;border:1px solid #dfe5ee;border-radius:17px;overflow:hidden;box-shadow:0 10px 28px #071b4508}
+#lagu .lyricCard[open]{border-color:#f2c94c;box-shadow:0 15px 35px #071b4510}
+#lagu .lyricCard summary{display:flex!important;align-items:center!important;gap:13px!important;padding:17px 18px!important;cursor:pointer!important;list-style:none!important}
+#lagu .lyricCard summary::-webkit-details-marker{display:none!important}
+#lagu .lyricCard summary i{margin-left:auto!important}
+#lagu .lyricBody{display:none!important;padding:20px 22px 25px!important;border-top:1px solid #edf0f4!important;background:linear-gradient(180deg,#fff,#fbfcfe)!important}
+#lagu .lyricCard[open] > .lyricBody{display:block!important;visibility:visible!important;opacity:1!important;height:auto!important;max-height:none!important;overflow:visible!important}
+#lagu .lyricMeta{display:flex;align-items:center;gap:11px;padding-bottom:14px;margin-bottom:15px;border-bottom:1px solid #edf0f4}
+#lagu .lyricMeta>span{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#071b45;color:#f2c94c;font-size:18px}
+#lagu .lyricMeta strong{display:block;color:#071b45;font-size:12px}
+#lagu .lyricMeta em{display:block;color:#8a96a8;font-size:9px;font-style:normal;margin-top:2px}
+#lagu .lyricText{color:#53627a;font-size:11px;line-height:1.9;white-space:normal}
+#lagu .lyricText br+br{content:"";display:block;height:8px}
+#lagu .lyricText br{line-height:1.9}
+@media(max-width:600px){
+ #lagu .lyricCard summary{padding:14px 12px!important}
+ #lagu .lyricBody{padding:17px 14px 21px!important}
+ #lagu .lyricText{font-size:10px;line-height:1.9}
+}
+
+/* =========================================================
+   LIRIK · CLICK-TO-OPEN RELIABLE ACCORDION
+   ========================================================= */
+#lagu .lyricCard{display:block!important;overflow:hidden!important}
+#lagu .lyricToggle{
+  width:100%!important;
+  appearance:none!important;
+  -webkit-appearance:none!important;
+  border:0!important;
+  background:#fff!important;
+  color:#071b45!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:13px!important;
+  padding:17px 18px!important;
+  margin:0!important;
+  text-align:left!important;
+  font:inherit!important;
+  cursor:pointer!important;
+}
+#lagu .lyricToggle:hover{background:#fffaf0!important}
+#lagu .lyricToggle:focus-visible{outline:3px solid #f2c94c!important;outline-offset:-3px}
+#lagu .lyricCard.is-open .lyricToggle{background:#fffaf0!important}
+#lagu .lyricToggle i{margin-left:auto!important;font-style:normal!important;font-size:20px!important;transition:transform .22s ease!important}
+#lagu .lyricCard.is-open .lyricToggle i{transform:rotate(45deg)!important}
+#lagu .lyricBody{
+  display:none!important;
+  padding:20px 22px 25px!important;
+  border-top:1px solid #edf0f4!important;
+  background:linear-gradient(180deg,#fff,#fbfcfe)!important;
+}
+#lagu .lyricCard.is-open .lyricBody{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  height:auto!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+#lagu .lyricBody[aria-hidden="false"]{display:block!important}
+#lagu .lyricText{
+  display:block!important;
+  color:#53627a!important;
+  font-size:11px!important;
+  line-height:1.9!important;
+  white-space:normal!important;
+}
+@media(max-width:600px){
+  #lagu .lyricToggle{padding:14px 12px!important}
+  #lagu .lyricBody{padding:17px 14px 21px!important}
+  #lagu .lyricText{font-size:10.5px!important;line-height:1.9!important}
+}
+
+/* PROGRAM & AKTIVITI · ACTIVITY ICON */
+.activityIcon{position:relative;width:48px;height:52px;display:block}
+.activityIcon .actLine{position:absolute;left:6px;top:26px;width:36px;height:3px;border-radius:4px;background:#fff;transform:rotate(-13deg)}
+.activityIcon .actStar{position:absolute;right:1px;top:1px;color:#f2c94c;font-style:normal;font-size:19px;z-index:3}
+.activityIcon .actDot{position:absolute;left:5px;top:22px;width:9px;height:9px;border-radius:50%;background:#f2c94c;box-shadow:0 0 0 4px #ffffff10}
+.activityIcon .actDot.two{left:20px;top:18px;background:#fff}
+.activityIcon .actDot.three{left:35px;top:12px;background:#f2c94c}
+.galleryQR .qrFrame{display:grid!important;place-items:center!important;background:#fff!important}
+.galleryQR .qrFrame img{display:block!important;visibility:visible!important;opacity:1!important;width:98px!important;height:98px!important;object-fit:contain!important}
 </style>
 </head>
 <body>
@@ -958,8 +1044,13 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
     <div class="visualMenu">
       <a class="visualMenuItem vmProgram" href="#program">
         <div class="vmIcon">
-          <span class="flagShape"></span>
-          <span class="vmSpark">✦</span>
+          <span class="activityIcon">
+            <i class="actStar">✦</i>
+            <i class="actLine"></i>
+            <i class="actDot"></i>
+            <i class="actDot two"></i>
+            <i class="actDot three"></i>
+          </span>
         </div>
         <div class="vmText"><span>01</span><b>Program & Aktiviti</b><small>Aktiviti dan pertandingan Merdeka</small></div>
         <div class="vmGo">↗</div>
@@ -1114,7 +1205,7 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
       </div>
       <div class="galleryQR">
         <div class="qrFrame">
-          <img src="qr-galeri.png" alt="QR Code Galeri Google Photos" loading="lazy">
+          <img src="qr-galeri.png?v=2" alt="QR Code Galeri Google Photos" loading="lazy">
         </div>
         <small>IMBAS UNTUK GALERI</small>
       </div>
@@ -1309,47 +1400,54 @@ section{padding:100px 0}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.e
   <div class="wrap">
     <div class="ey">05 · LAGU PATRIOTIK</div>
     <div class="lyricsHead">
-      <div><h2>Nyanyian kita,<br>semangat kita.</h2><p class="intro">Empat lagu patriotik yang disenaraikan dalam atur cara pelancaran. Tekan tajuk lagu untuk membuka panel.</p></div>
+      <div>
+        <h2>Nyanyian kita,<br>semangat kita.</h2>
+        <p class="intro">Empat lagu patriotik pilihan. Tekan mana-mana tajuk untuk membuka lirik penuh.</p>
+      </div>
       <div class="lyricsBadge">♪</div>
     </div>
     <div class="lyricsList">
-      <details class="lyricCard">
-  <summary><span class="lyricNo">01</span><div><b>Keranamu Malaysia</b><small>Lagu 01 · Tekan untuk buka</small></div><i>+</i></summary>
+      <article class="lyricCard">
+  <button type="button" class="lyricToggle" aria-expanded="false">
+    <span class="lyricNo">01</span>
+    <div class="lyricTitle"><b>Keranamu Malaysia</b><small>Lagu 01 · Tekan untuk buka lirik</small></div>
+    <i aria-hidden="true">+</i>
+  </button>
   <div class="lyricBody">
-    <div class="lyricEmpty">
-      <span class="lyricNote">♪</span>
-      <div><strong>Lirik lagu</strong><p>Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
-    </div>
+    <div class="lyricMeta"><span>♪</span><div><strong>Keranamu Malaysia</strong></div></div>
+    <div class="lyricText">Buruh nelayan dan juga petani<br>Gaya hidup kini dah berubah<br>Anak-anak terasuh mindanya<br>Lahir generasi bijak pandai<br>Pakar IT pakar ekonomi<br>Jaguh sukan dan juga jutawan<br>Berkereta jenama negara<br>Megah menyusur di jalan raya<br>Alam siber teknologi terkini<br>Kejayaan semakin hampiri<br>Biar di kota ataupun desa<br>Kita semua pasti merasa bangga<br>Keranamu kami mendakap tuah<br>Keranamu kami bangsa berjaya<br>Keranamu kami hidup selesa<br>Limpah budi kemakmuran negara<br>Keranamu kami bebas merdeka<br>Keranamu  nyawa dipertaruhkan<br>Keranamu rela kami berjuang<br>Demi bangsa kedaulatan negara<br>( ulang dari mula )<br>Keranamu Negara Malaysia<br>Malaysia.......<br>Terima kasih Malaysia</div>
   </div>
-</details><details class="lyricCard">
-  <summary><span class="lyricNo">02</span><div><b>Jalur Gemilang</b><small>Lagu 02 · Tekan untuk buka</small></div><i>+</i></summary>
+</article><article class="lyricCard">
+  <button type="button" class="lyricToggle" aria-expanded="false">
+    <span class="lyricNo">02</span>
+    <div class="lyricTitle"><b>Jalur Gemilang</b><small>Lagu 02 · Tekan untuk buka lirik</small></div>
+    <i aria-hidden="true">+</i>
+  </button>
   <div class="lyricBody">
-    <div class="lyricEmpty">
-      <span class="lyricNote">♪</span>
-      <div><strong>Lirik lagu</strong><p>Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
-    </div>
+    <div class="lyricMeta"><span>♪</span><div><strong>Jalur Gemilang</strong></div></div>
+    <div class="lyricText">Merahmu bara semangat waja<br>Putihmu bersih budi pekerti<br>Kuning berdaulat payung negara<br>Biru perpaduan kami semua<br>Puncak dunia telah kau tawan<br>Lautan luas telah kau redah<br>Membawa semangat jiwa merdeka<br>Semarak jaya kami warganya<br>Empat belas melintang jalurnya<br>Semua negeri dalam Malaysia<br>Satu suara satu semangat<br>Itu sumpah warga berdaulat<br>Jalur gemilang di bawah naunganmu<br>Jalur gemilang kami semua bersatu<br>Perpaduan ketaatan<br>Amalan murni rakyat Malaysia<br>Jalur gemilang megah kami terasa<br>Jalur gemilang kibarkanlah wawasan<br>Merah putih biru kuning<br>Jalur semangat kami semua<br>Merahmu bara semangat waja<br>Putihmu bersih budi pekerti<br>Kuning berdaulat payung negara<br>Biru perpaduan kami semua<br>Puncak dunia telah kau tawan<br>Lautan luas telah kau redah<br>Membawa semangat jiwa merdeka<br>Semarak jaya kami warganya<br>Empat belas melintang jalurnya<br>Semua negeri dalam Malaysia<br>Satu suara satu semangat<br>Itu sumpah warga berdaulat<br>Jalur gemilang di bawah<br>naunganmu<br>Jalur gemilang kami semua<br>bersatu<br>Perpaduan ketaatan<br>Amalan murni rakyat Malaysia<br>Jalur gemilang megah kami terasa<br>Jalur gemilang kibarkanlah<br>wawasan<br>Merah putih biru kuning<br>Jalur semangat kami semua<br>Berkibarlah<br>Berkibarlah<br>Berkibarlah<br>Jalur gemilang</div>
   </div>
-</details><details class="lyricCard">
-  <summary><span class="lyricNo">03</span><div><b>Kita Punya Malaysia</b><small>Lagu 03 · Tekan untuk buka</small></div><i>+</i></summary>
+</article><article class="lyricCard">
+  <button type="button" class="lyricToggle" aria-expanded="false">
+    <span class="lyricNo">03</span>
+    <div class="lyricTitle"><b>Kita Punya Malaysia</b><small>Lagu 03 · Bunkface · Tekan untuk buka lirik</small></div>
+    <i aria-hidden="true">+</i>
+  </button>
   <div class="lyricBody">
-    <div class="lyricEmpty">
-      <span class="lyricNote">♪</span>
-      <div><strong>Lirik lagu</strong><p>Bunkface · Lagu patriotik. Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
-    </div>
+    <div class="lyricMeta"><span>♪</span><div><strong>Kita Punya Malaysia</strong><em>Bunkface</em></div></div>
+    <div class="lyricText">31 Bulan 8,57<br>Perjuangkan pertahankan tanah<br>airku<br>Impian aku gemilang baru<br>Satu suara laungkan (Merdeka!)<br>Bangkit semua demi negara<br>Selamanya...<br>Kita Merdeka<br>Sayangi Malaysiaku<br>Sayangi Malaysiaku<br>Tanah Airku (Ini Kita Punya)<br>Sayangi Malaysiaku<br>Sayangi Malaysia<br>Satu Suara Laungkan (Merdeka!)<br>Jangan lemah bangunlah<br>Buat baru semula<br>Percayalah hari ini<br>Kita punya<br>impian aku gemilang baru<br>Satu suara laungkan (Merdeka!)<br>Bangkit semua demi Negara<br>Selamanya...<br><br>Kita Merdeka<br>Sayangi Malaysiaku<br>Sayangi Malaysiaku<br>Tanah Airku (Ini Kita Punya)<br>Sayangi Malaysiaku<br>Sayangi Malaysia<br>Satu Suara Laungkan (Merdeka!)<br>(Merdeka) x3<br>Kita Merdeka<br>Sayangi Malaysiaku<br>Sayangi Malaysiaku<br>Tanah Airku (Ini Kita Punya)<br>Sayangi Malaysiaku<br>Sayangi Malaysia<br>Satu Suara Laungkan (Merdeka!)<br>Sayangi Malaysiaku<br>Sayangi Malaysia<br>Satu Suara Laungkan (Merdeka!)<br>Ini Kita Punya</div>
   </div>
-</details><details class="lyricCard">
-  <summary><span class="lyricNo">04</span><div><b>Saya Anak Malaysia</b><small>Lagu 04 · Tekan untuk buka</small></div><i>+</i></summary>
+</article><article class="lyricCard">
+  <button type="button" class="lyricToggle" aria-expanded="false">
+    <span class="lyricNo">04</span>
+    <div class="lyricTitle"><b>Saya Anak Malaysia</b><small>Lagu 04 · Tekan untuk buka lirik</small></div>
+    <i aria-hidden="true">+</i>
+  </button>
   <div class="lyricBody">
-    <div class="lyricEmpty">
-      <span class="lyricNote">♪</span>
-      <div><strong>Lirik lagu</strong><p>Lirik penuh tidak terdapat dalam fail sumber yang digunakan untuk buku program ini.</p></div>
-    </div>
+    <div class="lyricMeta"><span>♪</span><div><strong>Saya Anak Malaysia</strong></div></div>
+    <div class="lyricText">Saya Anak Malaysia<br>Saya Anak Malaysia<br>Saya Anak Malaysia<br>Saya Anak Malaysia<br>Sembilan belas lima<br>puluh tujuh<br>Bulan lapan kita<br>merdeka<br>Setelah dijajah oleh<br>orang Inggeris<br>Kamikaze dan Portugis<br>Dari Perlis ke kota<br>Kinabalu<br>Rakyat bersatu dan maju<br>Bumi bertuah hasil<br>melimpah<br>Siapa rajin hidup mewah<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Melayu Cina Iban India<br>Kadazan Portugis pun<br>ada<br>Semua kaya dengan<br>budaya<br>Di bawah kibaran satu<br>bendera<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Hujan emas di negeri orang<br>Hujan batu di negeri kita<br>Walaupun cantik negeri orang<br>Tentunya Malaysia cantik lagi<br>Melayu Cina Iban India<br>Kadazan Portugis pun ada<br>Semua kaya dengan budaya<br>Di bawah kibaran satu bendera<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Saya anak Malaysia<br>Sayaaa anak Malaysia…</div>
   </div>
-</details>
-    </div>
-  </div>
-</section></div>
-</details>
+</article>
     </div>
   </div>
 </section>
@@ -1412,6 +1510,36 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSearch();if((e.
     nums.forEach(n=>io.observe(n));
   } else nums.forEach(n=>n.textContent=n.dataset.count);
 })();
+</script>
+
+
+<script>
+/* Lirik: accordion controller — deliberately independent of <details>/browser defaults */
+document.addEventListener('DOMContentLoaded', function(){
+  const cards = document.querySelectorAll('#lagu .lyricCard');
+  cards.forEach(card => {
+    const toggle = card.querySelector('.lyricToggle');
+    const body = card.querySelector('.lyricBody');
+    if(!toggle || !body) return;
+    toggle.addEventListener('click', function(){
+      const opening = !card.classList.contains('is-open');
+      cards.forEach(other => {
+        other.classList.remove('is-open');
+        const b = other.querySelector('.lyricToggle');
+        const p = other.querySelector('.lyricBody');
+        if(b) b.setAttribute('aria-expanded','false');
+        if(p) p.setAttribute('aria-hidden','true');
+      });
+      if(opening){
+        card.classList.add('is-open');
+        toggle.setAttribute('aria-expanded','true');
+        body.setAttribute('aria-hidden','false');
+        setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'nearest'}),20);
+      }
+    });
+    body.setAttribute('aria-hidden','true');
+  });
+});
 </script>
 
 </body></html>
